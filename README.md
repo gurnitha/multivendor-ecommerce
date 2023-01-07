@@ -15,3 +15,13 @@ Membuat aplikasi multivendor online food
 
         modified:   .gitignore
         modified:   README.md
+
+
+## 03. Membuat Proyek Django 
+
+#### 03.0. Pendahuluan
+		pass
+
+#### 03.1. Membuat virtual environment
+
+        modified:   README.md
