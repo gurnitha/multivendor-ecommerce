@@ -50,3 +50,12 @@ Membuat aplikasi multivendor online food
         new file:   config/urls.py
         new file:   config/wsgi.py
         new file:   manage.py
+
+#### 03.4. Hello World!
+
+        modified:   README.md
+        modified:   config/urls.py
+        new file:   config/views.py
+
+        Testing :   Start server dan buka browser http://127.0.0.1:8000/
+        Hasil   :   Hallo World!
