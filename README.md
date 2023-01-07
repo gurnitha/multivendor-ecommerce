@@ -37,3 +37,16 @@ Membuat aplikasi multivendor online food
        1. Membuat virtual environment
        2. Mengaktifkan virtual environment
        3. Menginstal django  
+
+#### 03.3. Membuat proyek django
+
+		Perintah untuk membuat proyek django dengan nama 'config'
+		(venv3932) λ django-admin startproject config .
+
+        modified:   README.md
+        new file:   config/__init__.py
+        new file:   config/asgi.py
+        new file:   config/settings.py
+        new file:   config/urls.py
+        new file:   config/wsgi.py
+        new file:   manage.py
