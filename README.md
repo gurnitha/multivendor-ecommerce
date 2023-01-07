@@ -25,3 +25,15 @@ Membuat aplikasi multivendor online food
 #### 03.1. Membuat virtual environment
 
         modified:   README.md
+
+#### 03.2. Menginstal django
+
+       modified:   README.md
+
+       NOTE:
+
+       Tiga langkah untuk menginstal django:
+
+       1. Membuat virtual environment
+       2. Mengaktifkan virtual environment
+       3. Menginstal django  
