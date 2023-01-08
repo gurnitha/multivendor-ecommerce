@@ -279,3 +279,18 @@ Membuat aplikasi multivendor online food
         1. Membuat custom User model
         2. Testing: jalankan server
         3. Hasil: ok
+
+#### 07.3. Registrasi custom User
+
+        Aktivitas:
+
+        1. Meregistrasi cutom User model pada settings.py: AUTH_USER_MODEL = 'accounts.User'
+        2. Testing: jalankan server
+        3. Hasil: warning 'ValueError: Dependency on app with no migrations: accounts'
+        
+        modified:   README.md
+        modified:   config/settings.py
+
+        NEXT:
+
+        Menjalankan migrasi

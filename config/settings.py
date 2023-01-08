@@ -147,3 +147,13 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+"""
+Tutujuan meregistrasi custom User model pada settings.py adalah
+untuk memberitahu Django bahwa kita tidak menggunakan default User modelnya,
+melainkan kita menggunakan cutom User model. 
+Walaupun kita memberinya nama sama, tetatpi custom User model
+yang kita buat berbeda dengan default User model dari Django.
+Anda bisa memberinya nama yang lain. Tidak ada masalah.
+"""
+AUTH_USER_MODEL = 'accounts.User'
