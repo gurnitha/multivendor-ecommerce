@@ -252,4 +252,19 @@ Membuat aplikasi multivendor online food
         2. Register accounts app pada settings.py
         3. Testing: jalankan server
         4. Hasil: ok
-        
+
+
+
+## 07. Django Custom User Model
+
+#### 07.0. Pendahuluan
+#### 07.1. Membuat model UserManager
+
+        modified:   README.md
+        modified:   app/accounts/models.py
+
+        Aktivitas:
+
+        1. Membuat UserManager
+        2. Testing: jalankan server
+        3. Hasil: ok
