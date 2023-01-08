@@ -460,3 +460,30 @@ Membuat aplikasi multivendor online food
         NOTE:
 
         File media telah disetup pada: 08.1. Konfigurasi file media
+
+
+#### 09.5. Django signals and ready() function
+
+        modified:   README.md
+        modified:   app/accounts/apps.py
+        modified:   app/accounts/models.py
+        new file:   app/accounts/signals.py
+
+        Aktivitas:
+
+        1. Membuat file baru: accounts/signals.py
+        2. Pindahkan semua code signal dari account/models.py ke file signals.py
+        3. Hapus semua kode signals pada models.py
+        4. Pindahkan modules post_save, pre_save dan receiver ke signals.py
+           dari models.py dan hapus mudul itu dari models.py
+        5. Buat ready() function pada accounts/apps.py
+        6. Testing: buat user baru
+        7. Hasil: user baru dan profile user baru juga terbuat.
+
+        NOTE: So far, so good.
+
+        NEXT: Registrasi user
+
+#### 09.6. Testing
+#### 09.7. Github
+
