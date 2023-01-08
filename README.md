@@ -70,3 +70,9 @@ Membuat aplikasi multivendor online food
 
         modified:   README.md
         modified:   config/settings.py
+
+#### 04.2. Membuat homepage
+
+        modified:   README.md
+        modified:   config/views.py
+        new file:   templates/home.html
