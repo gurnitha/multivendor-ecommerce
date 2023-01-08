@@ -189,3 +189,14 @@ Membuat aplikasi multivendor online food
         4. Mengafilikasikan konfigurasi db pada settings.py
         5. Testing: Jalankan server
         6. Hasil: ok
+
+#### 04.4. Testing
+
+        Menjalankan server. 
+        Hasil Ok
+
+#### 04.5. Github
+
+        (venv3932) λ git push origin
+        Enter passphrase for key '/c/Users/hp/.ssh/id_rsa':
+        modified:   README.md
