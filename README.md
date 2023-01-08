@@ -382,3 +382,40 @@ Membuat aplikasi multivendor online food
 
 #### 08.5. Testing
 #### 08.6. Github
+
+
+
+## 09. Django Signals
+
+#### 09.0. Pendahuluan
+        pass
+
+#### 09.1. Tentang user profile
+        pass
+        
+#### 09.2. Membuat model UserProfile
+
+        modified:   README.md
+        modified:   app/accounts/admin.py
+        new file:   app/accounts/migrations/0002_userprofile.py
+        modified:   app/accounts/models.py
+
+        Aktivitas:
+
+        1. Membuat model UserProfile
+        2. Menjalankan migrasi
+        3. Registrasi model UserProfile pada accounts/admin.py
+        4. Login dan add User profile dari superuser
+        5. Testing: add profile untuk superuser
+        6. Hasil: ok
+
+        NOTE:
+
+        1. Idealnya userprofile bisa secara otomatis dibuat ketika
+           ada user baru yang melakukan registrasi.
+        2. Hal pada poin 1 bisa dilakukan dengan menggunakan Django Signals
+
+        NEXT:
+
+        Membuat Django Signals
+
