@@ -209,3 +209,33 @@ Membuat aplikasi multivendor online food
 
         modified:   README.md
         deleted:    TOC-MODIFIED-COPY
+
+
+## 06. Membuat Django App
+
+#### 06.0. Pendahuluan
+
+        pass 
+
+#### 06.1. Membuat django app
+
+        (venv3932) λ mkdir app\accounts
+        (venv3932) λ django-admin startapp accounts app\accounts
+
+        modified:   README.md
+        new file:   app/accounts/__init__.py
+        new file:   app/accounts/admin.py
+        new file:   app/accounts/apps.py
+        new file:   app/accounts/migrations/__init__.py
+        new file:   app/accounts/models.py
+        new file:   app/accounts/tests.py
+        new file:   app/accounts/views.py
+
+        Aktivitas:
+
+        1. Membuat folder di dalam root proyek: app/accounts
+        2. Membuat django app dengan nama accounts
+
+        NOTE:
+
+        Semua django app akan ditempatkan di dalam satu folder app 
