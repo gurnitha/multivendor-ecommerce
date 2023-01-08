@@ -40,8 +40,8 @@ Membuat aplikasi multivendor online food
 
 #### 03.3. Membuat proyek django
 
-		Perintah untuk membuat proyek django dengan nama 'config'
-		(venv3932) λ django-admin startproject config .
+        Perintah untuk membuat proyek django dengan nama 'config'
+        (venv3932) λ django-admin startproject config .
 
         modified:   README.md
         new file:   config/__init__.py
@@ -59,3 +59,14 @@ Membuat aplikasi multivendor online food
 
         Testing :   Start server dan buka browser http://127.0.0.1:8000/
         Hasil   :   Hallo World!
+
+
+## 04. Django Urls, Views dan Templates
+
+#### 04.0. Pendahuluan
+        pass
+
+#### 04.1. Aktifasi django templates
+
+        modified:   README.md
+        modified:   config/settings.py
