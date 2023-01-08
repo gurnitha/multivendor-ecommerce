@@ -48,94 +48,94 @@ TOC
 #### 04.9. Github
 
 
-04. Database
+05. Database
 ================
 
-04.1. Membuat Progres database
-04.2. Menginstal database driver
-04.3. Menghubungan Postgres dan Django 
-04.4. Melindungi sensitif file
-04.5. Testing
-04.6. Github
+05.1. Membuat Progres database
+05.2. Menginstal database driver
+05.3. Menghubungan Postgres dan Django 
+05.4. Melindungi sensitif file
+05.5. Testing
+05.6. Github
 
 
-05. Django App
+06. Django App
 ==============
 
-05.0. Pendahuluan
-05.1. Membuat django app
-05.2. Register django app
-05.3. Mofifikasi file apps.py
-05.4. Testing
-05.5. Github
+06.0. Pendahuluan
+06.1. Membuat django app
+06.2. Register django app
+06.3. Mofifikasi file apps.py
+06.4. Testing
+06.5. Github
 
 
-06. Django Custom User Model
+07. Django Custom User Model
 =================
 
-06.0. Pendahuluan
-06.1. User manager
-06.2. Custom user
-06.3. Registrasi custom user
-06.4. Menjalankan migrasi
-06.5. Membuat superuser
-06.6. Testing
-06.7. Github
+07.0. Pendahuluan
+07.1. User manager
+07.2. Custom user
+07.3. Registrasi custom user
+07.4. Menjalankan migrasi
+07.5. Membuat superuser
+07.6. Testing
+07.7. Github
 
 
-06. Konfigurasi File Media
+08. Konfigurasi File Media
 =================
 
-06.0. Pendahuluan
-06.1. Konfigurasi file media pada settings.py
-06.2. Konfigurasi path media pada urls.py
-06.3. Testing
-06.4. Github
+08.0. Pendahuluan
+08.1. Konfigurasi file media pada settings.py
+08.2. Konfigurasi path media pada urls.py
+08.3. Testing
+08.4. Github
 
 
-07. Django Signals
+09. Django Signals
 ==================
 
-07.0. Pendahuluan
-07.1. Tentang user profile
-07.2. Model profil pengguna
-07.3. Konfigurasi file media
-07.4. Sinyal Django untuk membuat profil pengguna
-07.5. Testing
-07.6. Github
+09.0. Pendahuluan
+09.1. Tentang user profile
+09.2. Model profil pengguna
+09.3. Konfigurasi file media
+09.4. Sinyal Django untuk membuat profil pengguna
+09.5. Testing
+09.6. Github
 
 
-06. Registrasi User, Django Messages, dan Error
+10. Registrasi User, Django Messages, dan Error
 ================
 
-06.0. Pendahuluan
-06.1. Path user registrasi
-06.2. Template formulir pendaftaran pengguna
-06.3. Implementasi form pendaftaran pengguna
-06.4. Hash kata sandi dari form
-06.5. Django field errors dan non field errors
-06.6. Django messages
-06.7. Animasi messages
-06.8. Testing
-06.9. Github
+10.0. Pendahuluan
+10.1. Path user registrasi
+10.2. Template formulir pendaftaran pengguna
+10.3. Implementasi form pendaftaran pengguna
+10.4. Hash kata sandi dari form
+10.5. Django field errors dan non field errors
+10.6. Django messages
+10.7. Animasi messages
+10.8. Testing
+10.9. Github
 
 
-07. Registrasi vendor dan fungsi autentikasi
+11. Registrasi vendor dan fungsi autentikasi
 ================
 
-07.0. Pendahuluan
-07.1. Model Vendor
-07.2. Template pendaftaran Vendor
-07.3. Fitur registrasi Vendor
-07.4. Konfigurasi admin Vendor
-07.5. Setup laman login
-07.6. Fitur login dan logout
-07.7. Membatasi pengguna yang logged in mengakses laman login dan laman registrasi
-07.8. Mendeteksi pengguna dan mengarahkannya ke dashboard masing-masing
-07.9. Membatasi pengguna untuk mengakses laman yang diproteksi
-07.10. Laman unauthorized 403
-07.11. Testing
-07.12. Github
+11.0. Pendahuluan
+11.1. Model Vendor
+11.2. Template pendaftaran Vendor
+11.3. Fitur registrasi Vendor
+11.4. Konfigurasi admin Vendor
+11.5. Setup laman login
+11.6. Fitur login dan logout
+11.7. Membatasi pengguna yang logged in mengakses laman login dan laman registrasi
+11.8. Mendeteksi pengguna dan mengarahkannya ke dashboard masing-masing
+11.9. Membatasi pengguna untuk mengakses laman yang diproteksi
+11.10. Laman unauthorized 403
+11.11. Testing
+11.12. Github
 
 
 ## 08. Verifikasi token dan konfigurasi email
