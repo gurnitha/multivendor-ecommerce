@@ -320,7 +320,7 @@ Membuat aplikasi multivendor online food
 #### 07.7. Github
 
 
-## 08. Konfigurasi File Media
+## 08. Django Admin
 
 #### 08.0. Pendahuluan
 #### 08.1. Konfigurasi file media
@@ -353,3 +353,32 @@ Membuat aplikasi multivendor online food
 
         modified:   README.md
         modified:   app/accounts/admin.py
+
+#### 08.4. Konfigur User fields pada admin panel
+
+        class UserAdmin(UserAdmin):
+
+            list_display = (
+                'email', 'first_name', 
+                'last_name', 'username', 'role', 'is_active')
+            ordering = ('-date_joined',)    
+
+            filter_horizontal = ()
+            list_filter = ()
+            fieldsets = ()
+
+        admin.site.register(User, UserAdmin)
+
+        modified:   README.md
+        modified:   app/accounts/admin.py
+
+        Aktivitas:
+
+        1. Customise class UserAdmin
+        2. Testing: refresh admin panel
+        3. Hasil: ok
+
+        NEXT: Membuat Django Signals
+
+#### 08.5. Testing
+#### 08.6. Github
