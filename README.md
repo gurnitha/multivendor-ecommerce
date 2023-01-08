@@ -334,3 +334,18 @@ Membuat aplikasi multivendor online food
         1. Konfigurasi file media pada settings.py dan urls.py
 
         NEXT: menambahkan gambar untuk superuser
+
+#### 08.2. Admin login 
+
+        modified:   README.md
+        modified:   app/accounts/admin.py
+
+        Aktivitas:
+
+        1. Register model User pada admin.py
+        2. Admin login
+        3. Testing: admin login
+        4. Hasil: berhasil, tapi password masih bisa diedit.
+
+        NEXT: Membuat password tidak bisa diedit.
+
