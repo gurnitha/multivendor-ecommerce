@@ -318,3 +318,19 @@ Membuat aplikasi multivendor online food
 
 #### 07.6. Testing
 #### 07.7. Github
+
+
+## 08. Konfigurasi File Media
+
+#### 08.0. Pendahuluan
+#### 08.1. Konfigurasi file media
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+
+        Aktivitas:
+
+        1. Konfigurasi file media pada settings.py dan urls.py
+
+        NEXT: menambahkan gambar untuk superuser
