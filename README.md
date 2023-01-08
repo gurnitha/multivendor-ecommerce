@@ -349,3 +349,7 @@ Membuat aplikasi multivendor online food
 
         NEXT: Membuat password tidak bisa diedit.
 
+#### 08.3. Membuat password tidak bisa diedit
+
+        modified:   README.md
+        modified:   app/accounts/admin.py
