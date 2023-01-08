@@ -268,3 +268,14 @@ Membuat aplikasi multivendor online food
         1. Membuat UserManager
         2. Testing: jalankan server
         3. Hasil: ok
+
+#### 07.2. Membuat custom model User
+
+        modified:   README.md
+        modified:   app/accounts/models.py
+
+        Aktivitas:
+
+        1. Membuat custom User model
+        2. Testing: jalankan server
+        3. Hasil: ok
