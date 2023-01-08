@@ -86,3 +86,16 @@ Membuat aplikasi multivendor online food
 
         modified:   README.md
         modified:   config/settings.py
+
+#### 04.5. Loading file statis
+
+        modified:   .gitignore
+        modified:   README.md
+        modified:   templates/home.html
+
+        Aktivitas:
+
+        1. Menambahkan assets pada static folder
+        2. Loading static files: {% load statci %} {% static 'assets/....' %}
+        3. Testing: start local server dan buka browser
+        4. Hasil: ok
