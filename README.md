@@ -115,3 +115,27 @@ Membuat aplikasi multivendor online food
         5. Membuat block tag: block content pada main section pada base.html
         6. Testing: start local server dan buka browser
         7. Hasil: ok
+
+#### 04.7. Partials dan include
+
+        modified:   README.md
+        new file:   TOC-MODIFIED-COPY
+        modified:   templates/base.html
+        new file:   templates/partials/footer.html
+        new file:   templates/partials/header.html
+
+        Aktivitas:
+
+        1. Dalam templates membuat folder partials: templates/partials
+        2. Membuat 2 files pada folder partials: header.html dan footer.html
+        3. Memindahkan bagian header pada base.html ke header.html
+        4. Memindahkan bagian footer pada base.html ke footer.html
+        5. Meng-include header.html dan footer.html pada base.html
+        6. Testing: start local server dan buka browser
+        7. Hasil: ok
+
+#### 04.8. Testing
+        
+        Ok
+        
+#### 04.9. Github

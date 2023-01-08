@@ -1,0 +1,334 @@
+TOC
+
+01. Pendahuluan
+================
+
+1. Pengantar
+2. Demo Proyek Lengkap
+3. Bagan Alir Proyek
+4. PENTING!!! Cara Mendapatkan Kursus Ini Dengan Harga Terendah
+
+
+02. Persiapan
+================
+
+02.0. Pendahuluan
+02.1. Menginstal Python
+02.2. Menginstall pip dan virtualenv
+02.3. Menginstal Text Editor
+02.4. Menginstal PostgreSQL
+02.5. Membuat Github repositori
+02.6. Clone Github repositori
+02.7. Testing
+
+
+## 03. Membuat Proyek Django 
+================DONE
+
+#### 03.0. Pendahuluan
+#### 03.1. Membuat virtual environment
+#### 03.2. Menginstal django
+#### 03.3. Membuat proyek django
+#### 03.4. Hello World!
+#### 03.5. Github
+
+
+## 04. Django Urls, Views dan Templates
+================
+
+#### 04.0. Pendahuluan
+#### 04.1. Aktifasi django templates
+#### 04.2. Membuat homepage
+#### 04.3. Mengisi html template untuk homepage
+#### 04.4. Konfigurasi file statis
+#### 04.5. Loading file statis
+#### 04.6. Template inheritance basic
+#### 04.7. Partials dan include
+#### 04.8. Testing
+#### 04.9. Github
+
+
+04. Database
+================
+
+04.1. Membuat Progres database
+04.2. Menginstal database driver
+04.3. Menghubungan Postgres dan Django 
+04.4. Melindungi sensitif file
+04.5. Testing
+04.6. Github
+
+
+05. Django App
+==============
+
+05.0. Pendahuluan
+05.1. Membuat django app
+05.2. Register django app
+05.3. Mofifikasi file apps.py
+05.4. Testing
+05.5. Github
+
+
+06. Django Custom User Model
+=================
+
+06.0. Pendahuluan
+06.1. User manager
+06.2. Custom user
+06.3. Registrasi custom user
+06.4. Menjalankan migrasi
+06.5. Membuat superuser
+06.6. Testing
+06.7. Github
+
+
+06. Konfigurasi File Media
+=================
+
+06.0. Pendahuluan
+06.1. Konfigurasi file media pada settings.py
+06.2. Konfigurasi path media pada urls.py
+06.3. Testing
+06.4. Github
+
+
+07. Django Signals
+==================
+
+07.0. Pendahuluan
+07.1. Tentang user profile
+07.2. Model profil pengguna
+07.3. Konfigurasi file media
+07.4. Sinyal Django untuk membuat profil pengguna
+07.5. Testing
+07.6. Github
+
+
+06. Registrasi User, Django Messages, dan Error
+================
+
+06.0. Pendahuluan
+06.1. Path user registrasi
+06.2. Template formulir pendaftaran pengguna
+06.3. Implementasi form pendaftaran pengguna
+06.4. Hash kata sandi dari form
+06.5. Django field errors dan non field errors
+06.6. Django messages
+06.7. Animasi messages
+06.8. Testing
+06.9. Github
+
+
+07. Registrasi vendor dan fungsi autentikasi
+================
+
+07.0. Pendahuluan
+07.1. Model Vendor
+07.2. Template pendaftaran Vendor
+07.3. Fitur registrasi Vendor
+07.4. Konfigurasi admin Vendor
+07.5. Setup laman login
+07.6. Fitur login dan logout
+07.7. Membatasi pengguna yang logged in mengakses laman login dan laman registrasi
+07.8. Mendeteksi pengguna dan mengarahkannya ke dashboard masing-masing
+07.9. Membatasi pengguna untuk mengakses laman yang diproteksi
+07.10. Laman unauthorized 403
+07.11. Testing
+07.12. Github
+
+
+## 08. Verifikasi token dan konfigurasi email
+================
+
+
+48. Konfigurasi Email
+
+49. Kirim Email Verifikasi
+
+50. Mengaktifkan Pengguna
+
+51. Lupa Kata Sandi Pengaturan
+
+52. Lupa Password Kirim Link Validasi
+
+53. Fitur Atur Ulang Kata Sandi
+
+54. Git Dorong
+
+
+## 09. Persetujuan vendor oleh admin dan dashboard
+================
+
+
+55. Email Persetujuan Admin
+
+56. Setup Cust Dan Vendor Dashboard Frontend
+
+57. Perbaikan Ikon Bilah Sisi Dasbor
+
+58. Penyiapan Url Dasbor Vendor
+
+59. Memuat Gambar Profil Vendor Secara Dinamis
+
+60. Dapatkan Prosesor Konteks Vendor
+
+61. Perbaiki Kesalahan Pengguna Anonim Dalam Pemroses Konteks
+
+62. Membuat Kartu Dashboard
+
+63. Git Dorong
+
+
+
+## 10. Buat formulir profil restoran dan validator khusus
+================
+
+
+64. Pengaturan Formulir Profil Restoran
+
+65. Profil Vendor Toko
+
+66. Fungsi Validator Kustom Hanya Mengizinkan Gambar
+
+67. Readonly Latlong And Apply Decorator
+
+68. Siapkan Bidang Alamat Untuk Google Geocoding
+
+69. Git Dorong
+
+
+
+## 11. Terapkan bidang Pelengkapan Otomatis Google
+================
+
+
+70. Siapkan Akun Penagihan Google Maps
+
+71. Aktifkan Apis Dan Buat Kunci Api
+
+72. Terapkan Pelengkapan Otomatis Google
+
+73. Dapatkan Lat Long Dan Tetapkan Untuk Form Field
+
+74. Loop Melalui Komponen Alamat Dan Ambil Data
+
+75. Git Dorong
+
+
+
+## 12. Pembuat Menu - Kategori fungsi CRUD
+================
+
+
+76. Kategori Model Foodmenu Dan Model Fooditem
+
+77. Tambahkan Test Food Dan Setup Admin Table
+
+78. Url Pembuat Menu Dan Lihat Setup
+
+79. Kategori Pembuat Menu Frontend Bagian1
+
+80. Pembuat Menu Fooditem Front End
+
+81. Tambahkan Kategori CRUD
+
+82. Tambahkan Kesalahan Menangani Kategori
+
+83. Edit CRUD Kategori
+
+84. Hapus Kategori CRUD
+
+85. Git Dorong
+
+
+
+## 13. Pembuat Menu - fungsi CRUD Produk Makanan
+================
+
+
+86. Tambahkan Crud Makanan
+
+87. Edit Crud Makanan
+
+88. Hapus Crud Makanan
+
+89. Penyesuaian Jalur Url dan Lencana Ketersediaan
+
+90. Tangani Kesalahan Nilai Kosong
+
+91. Mofidy Formulir Untuk Menampilkan Kategori Milik Vendor yang Masuk
+
+92. Edit Kategori Makanan Untuk Vendor yang Masuk
+
+93. Git Dorong
+
+
+
+## 14. Implementasi pasar
+================
+
+
+94. Tampilkan Vendor Di Beranda
+
+95. Tombol Marketplace Dan Pengaturan Url
+
+96. Html dan Tampilan Marketplace
+
+97. Edit Model Vendor Dan Tambahkan Bidang Slug
+
+98. Penyiapan Halaman Detail Vendor
+
+99. Dis Fooditems Berdasarkan Kategori Menggunakan Prefetch Related
+
+
+
+## 15. Fungsi keranjang tanpa menyegarkan halaman - permintaan AJAX
+================
+
+
+100. Buat Model Gerobak
+
+101. Add To Cart Pengaturan Url
+
+102. Add To Cart Mengirim Permintaan Ajax
+
+103. Add To Cart Lihat Fungsionalitas Diedit
+
+104. Pemroses Konteks Penghitung Gerobak
+
+105. Tempatkan Kuantitas Pada Setiap Item Makanan
+
+106. Perbarui Penghitung Keranjang Dan Jumlah Barang Secara Realtime
+
+107. Perbaiki Masalah Skrip Google Maps
+
+108. Penurunan Fitur Keranjang Diedit
+
+109. Terapkan Pesan Sweetalert Dan Tangani
+
+
+
+## 16. Fungsi keranjang dengan frontend
+================
+
+
+110. Penyiapan Url Keranjang
+
+111. Pengaturan Konten Halaman Keranjang
+
+112. Keranjang Item Di Keranjang
+
+113. Perbaiki Jumlah Item Keranjang
+
+114. Hapus Barang Keranjang
+
+115. Hapus Item Keranjang Tanpa Memuat Ulang Halaman
+
+116. Periksa Apakah Keranjang Kosong
+
+117. Tangani Kasus Penggunaan Keranjang Penurunan
+
+118. Tampilkan Lencana Nama Vendor Dan Tambahkan Klausul Pemesanan Menurut Klausul
+
+119. Dapatkan Jumlah Keranjang Berfungsi Untuk Mendapatkan Subtotal Dan Grand Tot
