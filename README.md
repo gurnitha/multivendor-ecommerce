@@ -159,3 +159,33 @@ Membuat aplikasi multivendor online food
         3. Testing: Database berhasil dibuat
         4. Hasil: ok
 
+#### 04.2. Menghubungan Postgres dan Django 
+
+        (venv3932) λ pip install psycopg2
+
+        modified:   README.md
+        modified:   config/settings.py
+
+        Aktivitas:
+
+        1. Menginstal db posgres driver: pip install psycopg2
+        2. Menghubungkan proyek dgn db dgn embuat konfigurasi db pada settings.py
+        3. Testing: Jalankan server
+        4. Hasil: ok
+
+#### 04.3. Melindungi sensitif file
+
+        (venv3932) λ pip install django-decouple
+
+        new file:   .env-example
+        modified:   README.md
+        modified:   config/settings.py
+
+        Aktivitas:
+
+        1. Menginstal django-decouple: pip install django-decouple
+        2. Membuat file: .env dan .env-exampel
+        3. Membuat konfigurasi db pada .env file
+        4. Mengafilikasikan konfigurasi db pada settings.py
+        5. Testing: Jalankan server
+        6. Hasil: ok
