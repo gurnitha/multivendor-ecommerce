@@ -99,3 +99,19 @@ Membuat aplikasi multivendor online food
         2. Loading static files: {% load statci %} {% static 'assets/....' %}
         3. Testing: start local server dan buka browser
         4. Hasil: ok
+
+#### 04.6. Template inheritance basic
+
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/home.html
+
+        Aktivitas:
+
+        1. Pada templates folder membuat base.html
+        2. Memindahkan seluruh html template pada home.html ke base.html
+        3. Pada home.html membuat block tag: extends base.html, load static, dan block content
+        4. Memindahkan bagian main section pada base.html ke home.html
+        5. Membuat block tag: block content pada main section pada base.html
+        6. Testing: start local server dan buka browser
+        7. Hasil: ok
