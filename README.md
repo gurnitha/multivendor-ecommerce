@@ -139,3 +139,23 @@ Membuat aplikasi multivendor online food
         Ok
         
 #### 04.9. Github
+
+        (venv3932) λ git push origin
+        Enter passphrase for key '/c/Users/hp/.ssh/id_rsa':
+
+
+
+## 04. Database
+================
+
+#### 04.1. Membuat Progres database
+
+        modified:   README.md
+
+        Aktivitas:
+
+        1. Mengaktifkan postgres server
+        2. Membuat database
+        3. Testing: Database berhasil dibuat
+        4. Hasil: ok
+
