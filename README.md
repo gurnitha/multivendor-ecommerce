@@ -239,3 +239,17 @@ Membuat aplikasi multivendor online food
         NOTE:
 
         Semua django app akan ditempatkan di dalam satu folder app 
+
+#### 06.2. Register django app
+
+        modified:   README.md
+        modified:   app/accounts/apps.py
+        modified:   config/settings.py
+
+        Aktivitas:
+
+        1. Merubah nama app pada apps.py
+        2. Register accounts app pada settings.py
+        3. Testing: jalankan server
+        4. Hasil: ok
+        
