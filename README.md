@@ -305,3 +305,16 @@ Membuat aplikasi multivendor online food
         1. Menjalankan migrasi
 
         NEXT: Membuat superuser
+
+#### 07.5. Membuat superuser
+
+        modified:   README.md
+
+        Aktivitas:
+
+        1. Membuat superuser
+
+        NEXT: Konfigurasi file media
+
+#### 07.6. Testing
+#### 07.7. Github
