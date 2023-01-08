@@ -204,3 +204,8 @@ Membuat aplikasi multivendor online food
 #### Modifikasi file
 
         modified:   TOC-MODIFIED-COPY
+
+#### House cleaning
+
+        modified:   README.md
+        deleted:    TOC-MODIFIED-COPY
