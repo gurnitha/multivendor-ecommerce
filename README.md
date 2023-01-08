@@ -81,3 +81,8 @@ Membuat aplikasi multivendor online food
 
         modified:   README.md
         modified:   templates/home.html
+
+#### 04.4. Konfigurasi file statis
+
+        modified:   README.md
+        modified:   config/settings.py
