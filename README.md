@@ -392,7 +392,7 @@ Membuat aplikasi multivendor online food
 
 #### 09.1. Tentang user profile
         pass
-        
+
 #### 09.2. Membuat model UserProfile
 
         modified:   README.md
@@ -419,3 +419,27 @@ Membuat aplikasi multivendor online food
 
         Membuat Django Signals
 
+#### 09.3. Membuat Django Signals
+
+        modified:   README.md
+        modified:   app/accounts/models.py
+
+        Aktivitas:
+
+        1. Membuat Django Signals
+        2. Testing: Membuat user baru
+        3. Hasil: User baru berhasil dibuat dan userprofile juga berhasil dibuat secara otomatis.
+
+        NOTE:
+
+        1. Bila existing user diupdate, maka userprofile tidak ikut terupdate.
+        2. Bila existing userprofile diupdate, maka existing user tsb ikut terupdate.
+        3. Bila userprofile dihapus, user tidak ikut terhapus.
+        4. Bila existing user diupdate, maka profilenya juga ikut terupdate scr otomatis.
+
+        NEXT:
+
+        Setup file media
+
+        modified:   README.md
+        modified:   app/accounts/models.py
