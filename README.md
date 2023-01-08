@@ -294,3 +294,14 @@ Membuat aplikasi multivendor online food
         NEXT:
 
         Menjalankan migrasi
+
+#### 07.4. Menjalankan migrasi
+
+        modified:   README.md
+        new file:   app/accounts/migrations/0001_initial.py
+
+        Aktivitas:
+
+        1. Menjalankan migrasi
+
+        NEXT: Membuat superuser
