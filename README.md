@@ -443,3 +443,20 @@ Membuat aplikasi multivendor online food
 
         modified:   README.md
         modified:   app/accounts/models.py
+
+#### 09.4. Mensetup file media
+
+        modified:   README.md
+        new file:   media/users/cover_photos/ing.jfif
+        new file:   media/users/profile_pictures/ing.jfif
+
+        Aktivitas:
+
+        1. Add image untuk superuser
+        2. Tesing: menambahkan gambar
+        3. Hasil: gambar berhasil diupload dan folder media/users/cover_photos dan 
+           media/users/profile_pictures
+           
+        NOTE:
+
+        File media telah disetup pada: 08.1. Konfigurasi file media
