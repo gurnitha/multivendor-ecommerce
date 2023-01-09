@@ -71,3 +71,7 @@ def register_user(request):
 		'form': form,
 	}
 	return render(request, 'app/accounts/register-user.html', context)
+
+
+def register_vendor(request):
+	return render(request, 'app/accounts/register-vendor.html')

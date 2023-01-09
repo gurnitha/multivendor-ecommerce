@@ -1036,3 +1036,24 @@ Membuat aplikasi multivendor online food
         NEXT: Register vendor
 
         
+#### 14.4. Register vendor: urls, views, templates
+
+        modified:   README.md
+        modified:   app/accounts/urls.py
+        modified:   app/accounts/views.py
+        new file:   templates/app/accounts/register-vendor.html
+
+        Aktivitas:
+
+        1. Membuat path
+        2. Membuat register_vendor() view function
+        3. Membuat file baru: templates/app/accounts/register-vendor.html
+        4. Menambahkan text Register Vendor pada laman register-vendor
+        5. Testing: buka browser: http://127.0.0.1:8000/accounts/register-vendor/
+        6. Hasil: laman register-vendor berhasil ditampilkan
+
+        NEXT: Mengisi template laman register-vendor
+
+        
+
+
