@@ -1069,4 +1069,17 @@ Membuat aplikasi multivendor online food
         Membuat VendorRegistrationForm class
 
 
+#### 14.6. Membuat VendorRegistrationForm class
+
+        modified:   README.md
+        new file:   app/vendor/forms.py
+
+        Aktivitas:
+
+        1. Membuat file baru: app/vendor/forms.py
+        2. Membuat VendorRegistrationForm class
+
+        NEXT: Use VendorRegistrationForm class pada register_vendor() view function
+
+        
 
