@@ -53,6 +53,8 @@ def register_user(request):
 				username=username, email=email, password=password)
 			user.role = User.CUSTOMER
 			user.save()
+			print('User is created!')
+			return redirect('accounts:register_user')
 			
 	# if the request is GET
 	else:

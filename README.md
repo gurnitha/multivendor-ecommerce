@@ -489,7 +489,7 @@ Membuat aplikasi multivendor online food
 
 
 
-## 10. Registrasi User Django Messages, dan Error
+## 10. Registrasi User Sebagai Customer
 
 #### 10.0. Pendahuluan
 
@@ -610,7 +610,7 @@ Membuat aplikasi multivendor online food
         NEXT: Menambahkan field password dan confirm password dan form widget pada UserRegistrationForm
 
 
-### 10.5 Register user - Part 5: Loading form instan dari register_user views pada laman register-user
+#### 10.5 Register user - Part 5: Loading form instan dari register_user views pada laman register-user
 
         modified:   README.md
         modified:   app/accounts/forms.py
@@ -727,5 +727,21 @@ Membuat aplikasi multivendor online food
         NOTE: Data pada form tetap tinggal setelah submit the form 
 
         NEXT: Menghapus data pada form setelah form disubmit
+
+
+#### 10.11 Register user - Part 11: Final membersihkan form dari data input
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        Aktivitas:
+
+        1. Modifikasi register_user() method dengan menambahkan: return redirect('accounts:register_user')
+        2. Testing: register user baru
+        3. Hasil: Ok
+
+        NOTE: Bila terjadi kesalahan registrasi, tidak ada tanda alert atau error yang diperlihatkan.
+
+        NEXT: Memperlihatkan error
 
         
