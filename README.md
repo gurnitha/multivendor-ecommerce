@@ -976,3 +976,28 @@ Membuat aplikasi multivendor online food
 #### Modified Readme file - forgot to save in 13.2
 
         modified:   README.md
+
+
+#### 14. Vendor
+
+#### 14.0. Pendahuluan
+        pass
+
+#### 14.1. Membuat vendor app
+
+        modified:   README.md
+        new file:   app/vendor/__init__.py
+        new file:   app/vendor/admin.py
+        new file:   app/vendor/apps.py
+        new file:   app/vendor/migrations/__init__.py
+        new file:   app/vendor/models.py
+        new file:   app/vendor/tests.py
+        new file:   app/vendor/views.py
+        modified:   config/settings.py
+
+        Aktivitas:
+
+        1. Membuat folder baru: app/vendor
+        2. Membuat django app 'vendor'
+        3. Delete registered vendor app in settings.py 
+           (forgot to delete it when removed the vendor app)
