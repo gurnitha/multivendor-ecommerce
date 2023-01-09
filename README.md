@@ -671,3 +671,22 @@ Membuat aplikasi multivendor online food
         Mendefinisikan user role
 
 
+#### 10.8 Register user - Part 8: Mendefinisikan user role
+
+        modified:   README.md
+        modified:   app/accounts/models.py
+        modified:   app/accounts/views.py
+
+        Aktivitas:
+
+        1. Mendefinisikan fungsi get_role User model
+        2. Mendefinisikan role sebagai Customer pada register_user() view method
+        3. Testing: register user baru
+        4. Hasil: test berhasil
+
+        NOTE:
+
+        1. Walaupun registrasi berhasil, namun format password yang dihasilkan
+           tidak standar:  Invalid password format or unknown hashing algorithm.
+
+        NEXT: Hash password
