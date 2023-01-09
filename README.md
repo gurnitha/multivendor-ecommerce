@@ -690,3 +690,24 @@ Membuat aplikasi multivendor online food
            tidak standar:  Invalid password format or unknown hashing algorithm.
 
         NEXT: Hash password
+
+
+#### 10.9 Register user - Part 9: Hash password
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        Aktivitas:
+
+        1. Menambahkan logik pada register_user() untuk hash password.
+        2. Testing: register user baru.
+        3. Hasil: user baru dan profilnya berhasil disimpan di dalam db dengan hash password
+
+        NOTE:
+
+        1. Kita telah berhasil meregistrasi user dengan menggunakan form method.
+        2. Kita belum mencoba meregistrasi user dengan menggunakan create_user method.
+
+        NEXT:
+
+        Meregistrasi user dengan menggunakan create_user method.
