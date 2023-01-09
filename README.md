@@ -932,3 +932,30 @@ Membuat aplikasi multivendor online food
 
         NEXT: Animasi alerts massage
 
+
+
+## 13. Animasi Messages
+
+
+#### 13.1. Animate alert message dengan CSS
+
+        modified:   README.md
+        modified:   templates/base.html
+        modified:   templates/partials/alerts.html
+
+        Aktivitas:
+
+        1. Membuat file custom.css
+        2. Tambahkan pada file tsb css untuk animasi
+        3. Load custom.css pada base.html
+        4. Buat class show-notification pada alerts.html
+        5. Testing: buat user baru
+        6. Hasil: Animasi alert bekerja setelah sukses register user baru
+
+        NOTE:
+
+        Animasi alert dapat ditampilkan dengan menggunakan Django Tag
+
+        NEXT: Gunakan Django Tag untuk animasi alert
+
+        
