@@ -973,10 +973,6 @@ Membuat aplikasi multivendor online food
         4. Hasil: berhasil
 
 
-#### 14. Vendor
+#### Modified Readme file - forgot to save in 13.2
 
-#### 14.0. Pendahuluan
-        pass
-
-#### 14.1. Membuat vendor app
-
+        modified:   README.md
