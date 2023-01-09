@@ -1054,6 +1054,19 @@ Membuat aplikasi multivendor online food
 
         NEXT: Mengisi template laman register-vendor
 
-        
+
+#### 14.5. Mengisi register-vendor dengan html template
+ 
+        modified:   README.md
+        modified:   templates/app/accounts/register-vendor.html
+
+        Aktivitas:
+
+        1. Mengisi tempate
+
+        NEXT:
+
+        Membuat VendorRegistrationForm class
+
 
 
