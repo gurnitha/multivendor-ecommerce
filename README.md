@@ -570,3 +570,41 @@ Membuat aplikasi multivendor online food
         3. Hasil: ok
 
         NEXT: Django form
+
+
+#### 10.4. Menggunakan Django Model Forms untuk user register - Part 1: Basik
+
+        modified:   README.md
+        new file:   app/accounts/forms.py
+        modified:   app/accounts/views.py
+        modified:   templates/app/accounts/register-user.html
+
+        Aktifitas:
+
+        1. Membuat file baru: app/accounts/forms.py
+        2. Menggunakan django ModelForm untuk membuat form
+
+                from django import forms
+
+                # Local
+                from app.accounts.models import User
+
+                class UserRegistrationForm(forms.ModelForm):
+                        class Meta:
+                                model = User
+                                fields = [
+                                        'first_name', 'last_name', 
+                                        'username', 'email', 'phone_number', 'password'
+                                ]
+
+        3. Menggukan model UserRegistrationForm pada views
+        4. Menampilkan form instan pada register-user
+        5. Tesing: refresh browser
+        6. Hasil: ok
+
+        NOTE:
+
+        1. Form tidak berisi input untuk konfirm password.
+        2. Form juga tidak berisi widget untuk styling
+
+        NEXT: Menambahkan field password dan confirm password dan form widget pada UserRegistrationForm
