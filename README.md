@@ -608,3 +608,27 @@ Membuat aplikasi multivendor online food
         2. Form juga tidak berisi widget untuk styling
 
         NEXT: Menambahkan field password dan confirm password dan form widget pada UserRegistrationForm
+
+
+### 10.5 Register user - Part 5: Loading form instan pada laman register-user
+
+        modified:   README.md
+        modified:   app/accounts/forms.py
+        modified:   templates/app/accounts/register-user.html
+
+        Aktivitas:
+
+        1. Menambahkan form field pada UserRegistrationForm model
+        2. Loading form instan pada laman register-user
+        3. Testing: refresh browser
+        4. Hasil: ok
+
+        NOTE: 
+
+        Form belum bisa dipakai untuk register user karena belum ada logiknya pada register_user() view function
+
+        NEXT:
+
+        Membuat logik pada register_user() view function
+
+
