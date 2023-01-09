@@ -522,7 +522,7 @@ Membuat aplikasi multivendor online food
         20. At the same time, we will send email to the restauran that he got a new order
         21. Once the restaurant owner open the email, the transaction can be procceded: except or reject the order
 
-#### 10.1. Membuat Path user registrasi - urls, views
+#### 10.1. Register user - Part 1: urls, views with HttpResponse
 
         modified:   README.md
         new file:   app/accounts/urls.py
@@ -541,7 +541,7 @@ Membuat aplikasi multivendor online food
         NEXT: Template untuk user register  
 
 
-#### 10.2. Membuat Path user registrasi - urls, views, templates
+#### 10.2. Register user - Part 2: Urls, Views, Templates
 
         modified:   README.md
         modified:   app/accounts/views.py
@@ -558,7 +558,7 @@ Membuat aplikasi multivendor online food
         NEXT: Mengisi form template pada register-user.html
 
 
-#### 10.3. Mengisi form template pada laman register-user
+#### 10.3. Register user - Part 3: Mengisi form template pada laman register
 
         modified:   README.md
         modified:   templates/app/accounts/register-user.html
@@ -572,7 +572,7 @@ Membuat aplikasi multivendor online food
         NEXT: Django form
 
 
-#### 10.4. Menggunakan Django Model Forms untuk user register - Part 1: Basik
+#### 10.4. Register user - Part 4: Menggunakan Django Model Forms untuk membuat form fields
 
         modified:   README.md
         new file:   app/accounts/forms.py
@@ -610,7 +610,7 @@ Membuat aplikasi multivendor online food
         NEXT: Menambahkan field password dan confirm password dan form widget pada UserRegistrationForm
 
 
-### 10.5 Register user - Part 5: Loading form instan pada laman register-user
+### 10.5 Register user - Part 5: Loading form instan dari register_user views pada laman register-user
 
         modified:   README.md
         modified:   app/accounts/forms.py
@@ -632,3 +632,19 @@ Membuat aplikasi multivendor online food
         Membuat logik pada register_user() view function
 
 
+#### 10.6 Register user - Part 6: Membuat basik logik pada register_user() view function
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+        modified:   templates/app/accounts/register-user.html
+
+        Aktivitas:
+
+        1. Membuat basik logik pada register_user()
+        2. Menambahkan path action pada register-user form
+        3. Testing: register a user
+        4. Hasil: error, namun data yang diinput pada form berhasil ditangkap pada terminal
+
+        NOTE: Tujuan pada basik logik adalah untuk menangkap form input pada terminal
+
+        NEXT: Memodifikasi basik logik pada register_user()
