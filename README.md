@@ -911,3 +911,24 @@ Membuat aplikasi multivendor online food
         1. Massage tidak bisa di-close karena tidak ada tombol untuk menutupnya.
 
         NEXT: Menambahkan close button pada massage
+
+
+#### 12.4. Menambahkan close button page alert message
+
+        modified:   README.md
+        modified:   templates/partials/alerts.html
+
+        Aktivitas:
+
+        1. Menambahkan close button pada alerts.html
+        2. Testing: membuat user baru
+        3. Hasil: Sama seperti sebelumnya, bila password tidak sama, ada peringatan. 
+           Sebaliknya ada pesan sukses.
+
+        NOTE: 
+
+        1. Alert massage sangat statis.
+        2. Agar lebih menarik, buat alert massage dinamis.
+
+        NEXT: Animasi alerts massage
+
