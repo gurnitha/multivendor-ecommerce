@@ -890,4 +890,24 @@ Membuat aplikasi multivendor online food
 
         NEXT: Buat file khusus untuk massage.
 
-        
+
+#### 12.3. Using template inheritance (include) to show messages
+
+        modified:   README.md
+        modified:   templates/app/accounts/register-user.html
+        new file:   templates/partials/alerts.html
+
+        Aktivitas:
+
+        1. Membuat file baru alerts: templates/partials/alerts.html
+        2. Memindahkan django massage dari laman register_user ke alerts.html
+        3. Include alerts.html pada laman register_user
+        4. Testing: membuat user baru
+        5. Hasil: Sama seperti sebelumnya, bila password tidak sama, ada peringatan. 
+           Sebaliknya ada pesan sukses.
+
+        NOTE:
+
+        1. Massage tidak bisa di-close karena tidak ada tombol untuk menutupnya.
+
+        NEXT: Menambahkan close button pada massage
