@@ -541,7 +541,6 @@ Membuat aplikasi multivendor online food
         NEXT: Template untuk user register  
 
 
-
 #### 10.2. Membuat Path user registrasi - urls, views, templates
 
         modified:   README.md
@@ -559,3 +558,15 @@ Membuat aplikasi multivendor online food
         NEXT: Mengisi form template pada register-user.html
 
 
+#### 10.3. Mengisi form template pada laman register-user
+
+        modified:   README.md
+        modified:   templates/app/accounts/register-user.html
+
+        Aktifitas:
+
+        1. Mengisi form template pada laman register-user
+        2. Testing: refresh browser
+        3. Hasil: ok
+
+        NEXT: Django form
