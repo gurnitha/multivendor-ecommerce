@@ -826,3 +826,22 @@ Membuat aplikasi multivendor online food
         2. Django memiliki module CLEAN METHOD untuk membersihkan data input.
 
         NEXT: Membersihkan data input menggunakan Django CLEAN METHOD.
+
+
+#### 11.4. Showing NON field error 
+
+        modified:   README.md
+        modified:   app/accounts/forms.py
+        modified:   templates/app/accounts/register-user.html
+
+        Aktivitas:
+
+        1. Konfigur CLEAN METHOD pada UserRegistrationForm()
+        2. Tambahkan error list pada form:  <li style="color: red;">{{form.non_field_errors}}</li>
+        3. Testing: Membuat user baru dgn password yang berbeda dan password yang sama.
+        4. Hasil: password beda, ada peringatan dan register gagal. Sedangkan password sama, ok.
+
+        NEXT: Menggunakan Django Messages
+
+        
+
