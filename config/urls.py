@@ -12,7 +12,12 @@ from config import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+
+    # accounts
+    path('accounts/', include('app.accounts.urls')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
 
 

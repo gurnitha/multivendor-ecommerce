@@ -487,3 +487,55 @@ Membuat aplikasi multivendor online food
 #### 09.6. Testing
 #### 09.7. Github
 
+
+
+## 10. Registrasi User Django Messages, dan Error
+
+#### 10.0. Pendahuluan
+
+        Penjelasan flow dari cara kerja Multi Vendor Food Online
+        1. In comming random user (registered or not register user)
+        2. If not register, he can register as customer or vendor
+
+        REGISTER AS VENDOR
+
+        3. Let say he will register as vendor
+        4. A register form will be comes up
+        5. Once he registered, the admin will verify it (give him a certificate) and give the approval or reject it
+        6. Once admin approved, then he, as the vendor can login to our marketplace (note: the can distinguished vendor or customer)
+        7. If he loged in as vendor, he will be redirect to vendor dashboard
+        8. In the vendor dasboard, vendor can do CRUD operation for his: profile, location and restaurant timing
+        9. Vendor create or build menu and publish it to the marketplace (here is the critical part of the app)
+
+        REGISTER AS CUSTOMER
+
+        10. Register as customer
+        11. Log in as customer
+        12. Once he loged in, he can visit the marketplace or Customer dashboard
+        13. If he go to customer dashboar, he will be able to: update profile, check order, sign out    
+        14. If he go to the marketplace, he can order the food
+        15. In the marketplace, customer can search restaurant by location (near by location) or key words (by rest name, for example)
+        16. Once he happy with the search, he will be able to order, showed the cart, and make payment
+        17. If the payment is failed, the the app will show him again the cart
+        18. Once the payment is success, the app will deduct it for the admin commision (some percentage of the amount) 
+        19. Admin will receive the commision, then clear the cart and send emil to the customer (we have take care the order)
+        20. At the same time, we will send email to the restauran that he got a new order
+        21. Once the restaurant owner open the email, the transaction can be procceded: except or reject the order
+
+#### 10.1. Membuat Path user registrasi - urls, views
+
+        modified:   README.md
+        new file:   app/accounts/urls.py
+        modified:   app/accounts/views.py
+        modified:   config/urls.py
+
+        Aktifitas:
+
+        1. Membuat path register-user pada: app/accounts/urls.py
+        2. Include app/accounts/urls.py pada: config/urls.py
+        3. Membuat register-user views pada: app/accounts/views.py.
+           views.py menampilkan: return HttpResponse('Register user here ..')
+        4. Testing: buka browser, http://127.0.0.1:8000/accounts/register-user
+        5. Hasil: ok
+
+        NEXT: Template untuk user register  
