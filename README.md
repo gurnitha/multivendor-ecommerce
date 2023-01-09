@@ -744,4 +744,57 @@ Membuat aplikasi multivendor online food
 
         NEXT: Memperlihatkan error
 
+
+
+## 11. Showing Errors: Field and Non Field Error
+
+#### 11.1. Pendahuluan
+
+        FIELD ERROR
+
+        In simple words, any errors that are associated with your model fields are called field errors.
+
+        NONE FIELD ERROR
+
+        These non field errors are the errors that are not associated with your model field, but they are associated
+        with your form's clean method where you raise your own custom validation errors from the form level
+        itself without attaching these fields into your model.
+        So that's what we call the non field errors.
+
+        The best example for this non field error is actually the confirm password.
+        So in our case, if I type a different password in this password and confirm password fields, then
+        this should actually give us an error saying password password do not match.
+
+        So this password has to be same.
+        Then we will be allowed to submit this form, otherwise we will get an error.
+        So that kind of error is called the non field error.
+
+
+#### 11.2. Showing field error pada terminal menggunakan existing email dan username
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        Aktivitas:
+
+        1. Modifikasi register_user() view function dengan menambahkan ini:
+
+                else:
+                        print('invalid form')
+                        print(form.errors)
+
+        2. Testing: Register user yang sudah ada di dalam database
+        3. Hasil: 
+
+        invalid form
+        User with this Username already exists.
+        User with this Email already exists.
+
+        NOTE: 
+
+        1. Error diperlihatkan pada terminal.
+        2. Idealnya, error bisa diperlihatkan pada form.
+
+        NEXT: Memperlihatkan error pada form
+
         

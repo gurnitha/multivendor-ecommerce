@@ -55,7 +55,11 @@ def register_user(request):
 			user.save()
 			print('User is created!')
 			return redirect('accounts:register_user')
-			
+
+		else:
+			print('invalid form')
+			print(form.errors)
+	
 	# if the request is GET
 	else:
 		form = UserRegistrationForm
