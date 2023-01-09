@@ -797,4 +797,32 @@ Membuat aplikasi multivendor online food
 
         NEXT: Memperlihatkan error pada form
 
-        
+
+#### 11.3. Showing field error pada form menggunakan existing email dan username
+
+        modified:   README.md
+        modified:   templates/app/accounts/register-user.html
+
+        Aktivitas:
+
+        1. Looping error pada laman register-user, spt di bawah ini:
+
+                <ul class="errorlist">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            {% for error in field.errors %}
+                                <li style="color: red;">{{error}}</li>
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+
+        2. Testing: Register user yang sudah ada di dalam db.
+        3. Hasil: Error diperlihatkan pada laman form.
+
+        NOTE:
+
+        1. Data yang diinput seharusnya dibersihkan terlebih dahulu sebelum disimpan di dalam db.
+        2. Django memiliki module CLEAN METHOD untuk membersihkan data input.
+
+        NEXT: Membersihkan data input menggunakan Django CLEAN METHOD.
