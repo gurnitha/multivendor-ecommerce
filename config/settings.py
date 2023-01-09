@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     # New
     'app.accounts.apps.AccountsConfig',
+    'app.vendor.apps.VendorConfig',
 ]
 
 MIDDLEWARE = [

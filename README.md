@@ -1001,3 +1001,19 @@ Membuat aplikasi multivendor online food
         2. Membuat django app 'vendor'
         3. Delete registered vendor app in settings.py 
            (forgot to delete it when removed the vendor app)
+
+
+#### 14.2. Register vendor app pada settings.py
+
+        modified:   README.md
+        modified:   app/vendor/apps.py
+        modified:   config/settings.py
+
+        Aktivitas:
+
+        1. Konfigur appname pada apps.py: 
+           dari:  name = 'vendor'
+           menjadi: name = 'app.vendor'
+        2. Register vendor app pada settings.py
+
+        NEXT: Membuat Vendor model
