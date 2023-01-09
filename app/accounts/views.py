@@ -3,6 +3,8 @@
 # Django modules
 from django.shortcuts import render
 from django.shortcuts import redirect
+from django.contrib import messages
+
 
 # Locals
 from app.accounts.forms import UserRegistrationForm
@@ -53,6 +55,7 @@ def register_user(request):
 				username=username, email=email, password=password)
 			user.role = User.CUSTOMER
 			user.save()
+			messages.success(request, 'Your account has been registered sucessfully!')
 			print('User is created!')
 			return redirect('accounts:register_user')
 

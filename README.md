@@ -843,5 +843,51 @@ Membuat aplikasi multivendor online food
 
         NEXT: Menggunakan Django Messages
 
-        
 
+## 12. Django Messages
+
+#### 12.1. Pendahuluan
+
+        We need to actually check if we have a message or not message
+        If messages.
+        If messages and we'll be wondering how this messages is available in this register user
+        dot HTML because if you see this view we are not passing anything except form to this HTML.
+        But still we are able to access these messages. So that because of this context processors
+        in the settings.py file (inside the TEMPLATES).
+
+        So this context processor is something. It's kind of a function.
+        And when you write or when you return something inside the context processor, those module
+        will be available in all of your HTML files.
+
+
+#### 12.2. Setup django messages in views and register page
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+        modified:   templates/app/accounts/register-user.html
+
+        Aktivitas:
+
+        1. Konfigur django massages pada register_user() view method.
+        2. Konfigur (loop) message pada register-user page, spt ini:
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-success" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+        3. Testing: Buat user baru
+        4. Hasil: Bila password tidak sama, ada peringatan. Sebaliknya ada pesan sukses.
+
+        NOTE:
+
+        1. Agar massage bisa digunakan pada laman-laman lain, sebaiknya dibuat file khusus untuk massage.
+
+        NEXT: Buat file khusus untuk massage.
+
+        
