@@ -1017,3 +1017,22 @@ Membuat aplikasi multivendor online food
         2. Register vendor app pada settings.py
 
         NEXT: Membuat Vendor model
+
+
+#### 14.3. Membuat Vendor model
+
+        modified:   app/vendor/admin.py
+        new file:   app/vendor/migrations/0001_initial.py
+        modified:   app/vendor/models.py
+
+        Aktivitas:
+
+        1. Membuat Vendor model
+        2. Menjalankan migrasi
+        3. Register Vendor model pada admin.py
+        4. Testing: jalankan server dan login admin
+        5. Hasil: Vendor model berhsil
+
+        NEXT: Register vendor
+
+        
