@@ -958,4 +958,25 @@ Membuat aplikasi multivendor online food
 
         NEXT: Gunakan Django Tag untuk animasi alert
 
-        
+
+#### 13.2. Display alert menggunakan Django message tag
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   templates/partials/alerts.html
+
+        Aktivitas:
+
+        1. Registrasi django tag massage pada settings.py
+        2. Konfigur klass alert pada alerts.html
+        3. Testing: membuat user baru
+        4. Hasil: berhasil
+
+
+#### 14. Vendor
+
+#### 14.0. Pendahuluan
+        pass
+
+#### 14.1. Membuat vendor app
+
