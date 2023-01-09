@@ -711,3 +711,21 @@ Membuat aplikasi multivendor online food
         NEXT:
 
         Meregistrasi user dengan menggunakan create_user method.
+
+
+#### 10.10 Register user - Part 10: Meregistrasi user menggunakan create_user method
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        Aktivitas:
+
+        1. Memodifikasi register_user() view functions, menggunakan create_user() method.
+        2. Testing: Membuat user baru.
+        3. Hasil: ok
+
+        NOTE: Data pada form tetap tinggal setelah submit the form 
+
+        NEXT: Menghapus data pada form setelah form disubmit
+
+        
