@@ -539,3 +539,23 @@ Membuat aplikasi multivendor online food
         5. Hasil: ok
 
         NEXT: Template untuk user register  
+
+
+
+#### 10.2. Membuat Path user registrasi - urls, views, templates
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+        new file:   templates/app/accounts/register-user.html
+
+        Aktifitas:
+
+        1. Modifikasi app/accounts/views.py: return render(request, 'app/accounts/register-user.html')
+        2. Pada templates, membuat: templates/app/accounts/register-user.html
+        3. Mengisi text <h1>Register User</h1> pada register-user.html
+        4. Testing: refresh browser
+        5. Hasil: ok
+
+        NEXT: Mengisi form template pada register-user.html
+
+
