@@ -648,3 +648,26 @@ Membuat aplikasi multivendor online food
         NOTE: Tujuan pada basik logik adalah untuk menangkap form input pada terminal
 
         NEXT: Memodifikasi basik logik pada register_user()
+
+
+#### 10.7 Register user - Part 7: Membuat detail register_user() logik pada views
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        Aktivitas:
+
+        1. Membuat detail register user logik pada register_user() logik pada views
+        2. Testing: register a new user
+        3. Hasil: user baru dan profilnya berhasil disimpan di dalam db
+
+        NOTE: 
+
+        1. User yang diregister bersifat any user, tidak memiliki role.
+        2. Karena any user, maka tidak bisa dibedakan apakah rolenya sbg Customer atau Vendor
+
+        NEXT: 
+
+        Membuat user role
+
+
