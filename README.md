@@ -1105,3 +1105,25 @@ Membuat aplikasi multivendor online food
 
         NEXT: Create Vendor
 
+
+#### 14.7 Kombiansi penggunaan UserRegistrationForm dan VendorRegistrationForm - create vendor
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+        ...
+        new file:   media/vendor/license/cat-3.png
+
+        Aktivitas:
+
+        1. Mengupdate views
+        2. Testing: register vendor
+        3. Hasil: Kadang berhasil, kadang tidak berhasil
+
+        NOTE:
+
+        1. Display vendor pada admin panel hanya memperlihatkan alamat email.
+        2. Perlu konfigurasi vendor pada admin
+
+        NEXT: Konfigur admin panel untuk vendor
+
+        
