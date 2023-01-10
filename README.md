@@ -1081,5 +1081,27 @@ Membuat aplikasi multivendor online food
 
         NEXT: Use VendorRegistrationForm class pada register_vendor() view function
 
-        
+
+#### 14.7 Kombiansi penggunaan UserRegistrationForm dan VendorRegistrationForm   
+
+        modified:   README.md
+        modified:   app/accounts/admin.py
+        modified:   app/accounts/forms.py
+        modified:   app/accounts/models.py
+        modified:   app/accounts/signals.py
+        modified:   app/accounts/views.py
+        modified:   app/vendor/forms.py
+        modified:   templates/app/accounts/register-user.html
+        modified:   templates/app/accounts/register-vendor.html
+
+        Aktivitas:
+
+        1. Menyamakan posisi git repo dengan multivendor_food_online (07.3.2)
+        2. Menghapus/memperbarui semua files
+        3. Testing: membuat user baru
+        4. Hasil: 
+           - user baru berhasil sebagai user biasa 
+           - user baru belum bisa membedakan as vendor atau as user biasa
+
+        NEXT: Create Vendor
 

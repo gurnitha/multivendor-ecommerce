@@ -4,7 +4,7 @@
 from django import forms
 
 # locals
-from app.vendors.models import Vendor
+from app.vendor.models import Vendor
 
 class VendorRegistrationForm(forms.ModelForm):
     class Meta:

@@ -1,44 +1,87 @@
-# app/accounts/models.py
-
-# Import django modules
+# Django modules
 from django.db import models
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 from django.db.models.fields.related import OneToOneField
 
 
-# Create your models here.
+""" 
+About BaseUserManager:
+This BaseUserManager will allow you to edit the way how the users and superusers are created.
+As you can see, we have created two methods that is one for creating a user and another for creating
+a superuser
+"""
 
-'''Model: UserManager
-UserManager model tidak akan membuat kolom apa pun di dalam database.'''
+"""
+About UserManager class:
+UserManager class will: 
+1. contain 2 methods: create_user and create_superuser
+2. not have any field
+"""
+# class UserManager(BaseUserManager):
+#   # Defining create_user method with parameters:self, first_name, last_name, username, email, password=None
+#     def create_user(self, first_name, last_name, username, email, password=None):
+#       # Check email
+#         if not email:
+#             raise ValueError('User must have an email address')
+
+#         # Check username
+#         if not username:
+#             raise ValueError('User must have an username')
+
+#         # Create user using the model with values: email, username, first_name, and last_name
+#         user = self.model(
+#             email = self.normalize_email(email),
+#             username = username,
+#             first_name = first_name,
+#             last_name = last_name,
+#         )
+
+#         # Set password using set_password method with password as parameter.
+#         # set_password encodes the password because we can not store password in the database.
+#         user.set_password(password)
+#         # Save user in the default database.
+#         user.save(using=self._db)
+#         return user
+
+#     # Defining create_superuser method with parameters:self, first_name, last_name, username, email, password=None
+#     def create_superuser(self, first_name, last_name, username, email, password=None):
+#       # The 'normal user' actually has been created using the create_user method above. 
+#       # Now assigning it as superuser with these values: email, username, password, first_name, and last_name.
+#         user = self.create_user(
+#             email = self.normalize_email(email),
+#             username = username,
+#             password = password,
+#             first_name = first_name,
+#             last_name = last_name,
+#         )
+
+#         # Assigning the created user as admin, active, staff, and superadmin and save it to the default db.
+#         user.is_admin = True
+#         user.is_active = True
+#         user.is_staff = True
+#         user.is_superadmin = True
+#         user.save(using=self._db)
+#         return user
+
+
 class UserManager(BaseUserManager):
-
-    '''create_user method, menggunakan 5 parameter:
-    yaitu:first_name, last_name, username, email, dan password'''
     def create_user(self, first_name, last_name, username, email, password=None):
-        # Email dan nama pengguna diperlukan
         if not email:
             raise ValueError('User must have an email address')
 
         if not username:
             raise ValueError('User must have an username')
 
-        '''Jika semua field terpenuhi, simpan data ke dalam variabel user
-        dan normalais karakter yang ada dalam email'''
         user = self.model(
             email = self.normalize_email(email),
             username = username,
             first_name = first_name,
             last_name = last_name,
         )
-        # Simpan data ke dalam default db
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-
-    '''create_superuser method menggunakan 5 parameter:
-    yaitu:first_name, last_name, username, email, dan password.
-    ke-5 parameter ini diambil dari create_user method di atas.'''
     def create_superuser(self, first_name, last_name, username, email, password=None):
         user = self.create_user(
             email = self.normalize_email(email),
@@ -47,7 +90,6 @@ class UserManager(BaseUserManager):
             first_name = first_name,
             last_name = last_name,
         )
-        # Simpan data ke dalam default db
         user.is_admin = True
         user.is_active = True
         user.is_staff = True
@@ -55,15 +97,13 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-
 """ 
-Tentang AbstractBaseUser:
-AbstractBaseUser ini akan memberi Anda kontrol penuh terhadap
-Django User model. Anda boleh melakukan apa pun yang Anda maui.
+About AbstractBaseUser:
+This AbstractBaseUser will give you full control over Django's user model.
+You can do whatever you want to do with this AbstractBaseUser model.
 """
 
-'''Model: User
-User model akan membuat kolom di dalam database.'''
+# User will contain fields
 class User(AbstractBaseUser):
     VENDOR = 1
     CUSTOMER = 2
@@ -107,7 +147,7 @@ class User(AbstractBaseUser):
     REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
 
     # To tell django which class to use. In this case we use UserManager class.
-    # In the settings.py file we have to define to using User model
+    # In the settings.py file we have to define to using User
     objects = UserManager()
 
     def __str__(self):
@@ -120,7 +160,7 @@ class User(AbstractBaseUser):
         return self.is_admin
 
     """
-    About has_module_perms bellow:
+    About has_module_perms:
     We'll return True if the user is an active superuser or is an admin.
     And for inactive users it will be always return false.
     That means by default, only admin and superadmin can have access to this model.
@@ -136,7 +176,7 @@ class User(AbstractBaseUser):
         return user_role
 
 
-# Model: UserProfile
+# User profile
 class UserProfile(models.Model):
     user = OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
     profile_picture = models.ImageField(upload_to='users/profile_pictures', blank=True, null=True)
@@ -154,3 +194,7 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.user.email
+
+
+
+

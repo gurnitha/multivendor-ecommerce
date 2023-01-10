@@ -14,7 +14,7 @@ class UserRegistrationForm(forms.ModelForm):
 		model = User
 		fields = [
 			'first_name', 'last_name', 
-			'username', 'email', 'phone_number', 'password'
+			'username', 'email', 'password'
 		]
 
 	def clean(self):
