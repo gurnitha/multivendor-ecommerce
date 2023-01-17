@@ -1208,3 +1208,12 @@ Membuat aplikasi multivendor online food
         modified:   app/accounts/views.py
 
         NOTE: logged in user successfully redirected to home page
+
+
+#### 14.14 Logout - urls, views, templates
+
+        modified:   README.md
+        modified:   app/accounts/urls.py (create path)
+        modified:   app/accounts/views.py (added logic)
+        new file:   templates/app/accounts/logout.html
+        modified:   templates/partials/header.html (added links)
