@@ -1186,3 +1186,11 @@ Membuat aplikasi multivendor online food
 #### 14.10 Modified readme file
 
         modified:   README.md
+
+
+#### 14.11 Login - urls, views, templates
+
+        modified:   README.md
+        modified:   app/accounts/urls.py
+        modified:   app/accounts/views.py
+        new file:   templates/app/accounts/login.html

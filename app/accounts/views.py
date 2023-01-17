@@ -120,3 +120,7 @@ def register_vendor(request):
 		'vreg_form': vreg_form
 	}
 	return render(request, 'app/accounts/register-vendor.html', context)
+
+
+def login(request):
+	return render(request, 'app/accounts/login.html')
