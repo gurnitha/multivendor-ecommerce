@@ -1217,3 +1217,16 @@ Membuat aplikasi multivendor online food
         modified:   app/accounts/views.py (added logic)
         new file:   templates/app/accounts/logout.html
         modified:   templates/partials/header.html (added links)
+
+
+#### 14.15 Creating Dashboard page
+
+        modified:   README.md
+        modified:   app/accounts/urls.py
+        modified:   app/accounts/views.py
+        new file:   templates/app/accounts/dashboard.html
+
+        NOTE: 
+
+        Logged in with correct credentials, but the message
+        said, invalid credentials
