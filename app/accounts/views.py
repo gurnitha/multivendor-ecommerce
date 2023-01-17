@@ -145,7 +145,6 @@ def login(request):
 
 # Logout: Customer or Vendor
 def logout(request):
-	return render(request, 'app/accounts/logout.html')
 	auth.logout(request)
 	messages.info(request, 'You are logged out. Login again?')
 	return redirect('accounts:login')

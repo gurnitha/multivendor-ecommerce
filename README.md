@@ -1230,3 +1230,10 @@ Membuat aplikasi multivendor online food
 
         Logged in with correct credentials, but the message
         said, invalid credentials
+
+
+#### 14.16 Adding conditionals to navbar 
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+        modified:   templates/partials/header.html
