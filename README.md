@@ -978,7 +978,7 @@ Membuat aplikasi multivendor online food
         modified:   README.md
 
 
-#### 14. Vendor
+## 14. Vendor
 
 #### 14.0. Pendahuluan
         pass
@@ -1082,7 +1082,7 @@ Membuat aplikasi multivendor online food
         NEXT: Use VendorRegistrationForm class pada register_vendor() view function
 
 
-#### 14.7 Kombiansi penggunaan UserRegistrationForm dan VendorRegistrationForm   
+#### 14.7 Kombiansi data form vendor dan customer - create user  
 
         modified:   README.md
         modified:   app/accounts/admin.py
@@ -1106,7 +1106,7 @@ Membuat aplikasi multivendor online food
         NEXT: Create Vendor
 
 
-#### 14.7 Kombiansi penggunaan UserRegistrationForm dan VendorRegistrationForm - create vendor
+#### 14.7 Kombiansi data form vendor dan customer - create vendor
 
         modified:   README.md
         modified:   app/accounts/views.py
@@ -1126,4 +1126,12 @@ Membuat aplikasi multivendor online food
 
         NEXT: Konfigur admin panel untuk vendor
 
-        
+
+#### 14.8 Register Vendor model to admin and configure list_display
+
+#### 14.9 Changed the database, run and apply migrations and created admin, customer, and vendor
+
+
+        modified:   app/accounts/migrations/0001_initial.py
+        modified:   app/vendor/migrations/0001_initial.py
+        new file:   media/vendor/license/cat-1_KCkmQQY.png
