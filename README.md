@@ -4,6 +4,7 @@ Membuat aplikasi multivendor online food
 
 ## 02. Persiapan
 
+
 #### 02.0. Pendahuluan
 #### 02.1. Menginstal Python
 #### 02.2. Menginstall pip dan virtualenv
@@ -19,12 +20,15 @@ Membuat aplikasi multivendor online food
 
 ## 03. Membuat Proyek Django 
 
+
 #### 03.0. Pendahuluan
 		pass
+
 
 #### 03.1. Membuat virtual environment
 
         modified:   README.md
+
 
 #### 03.2. Menginstal django
 
@@ -37,6 +41,7 @@ Membuat aplikasi multivendor online food
        1. Membuat virtual environment
        2. Mengaktifkan virtual environment
        3. Menginstal django  
+
 
 #### 03.3. Membuat proyek django
 
@@ -51,6 +56,7 @@ Membuat aplikasi multivendor online food
         new file:   config/wsgi.py
         new file:   manage.py
 
+
 #### 03.4. Hello World!
 
         modified:   README.md
@@ -63,13 +69,16 @@ Membuat aplikasi multivendor online food
 
 ## 04. Django Urls, Views dan Templates
 
+
 #### 04.0. Pendahuluan
         pass
+
 
 #### 04.1. Aktifasi django templates
 
         modified:   README.md
         modified:   config/settings.py
+
 
 #### 04.2. Membuat homepage
 
@@ -77,15 +86,18 @@ Membuat aplikasi multivendor online food
         modified:   config/views.py
         new file:   templates/home.html
 
+
 #### 04.3. Mengisi html template untuk homepage
 
         modified:   README.md
         modified:   templates/home.html
 
+
 #### 04.4. Konfigurasi file statis
 
         modified:   README.md
         modified:   config/settings.py
+
 
 #### 04.5. Loading file statis
 
@@ -99,6 +111,7 @@ Membuat aplikasi multivendor online food
         2. Loading static files: {% load statci %} {% static 'assets/....' %}
         3. Testing: start local server dan buka browser
         4. Hasil: ok
+
 
 #### 04.6. Template inheritance basic
 
@@ -115,6 +128,7 @@ Membuat aplikasi multivendor online food
         5. Membuat block tag: block content pada main section pada base.html
         6. Testing: start local server dan buka browser
         7. Hasil: ok
+
 
 #### 04.7. Partials dan include
 
@@ -134,10 +148,12 @@ Membuat aplikasi multivendor online food
         6. Testing: start local server dan buka browser
         7. Hasil: ok
 
+
 #### 04.8. Testing
         
         Ok
         
+
 #### 04.9. Github
 
         (venv3932) λ git push origin
@@ -145,10 +161,10 @@ Membuat aplikasi multivendor online food
 
 
 
-## 04. Database
-================
+## 05. Database
 
-#### 04.1. Membuat Progres database
+
+#### 05.1. Membuat Progres database
 
         modified:   README.md
 
@@ -159,7 +175,8 @@ Membuat aplikasi multivendor online food
         3. Testing: Database berhasil dibuat
         4. Hasil: ok
 
-#### 04.2. Menghubungan Postgres dan Django 
+
+#### 05.2. Menghubungan Postgres dan Django 
 
         (venv3932) λ pip install psycopg2
 
@@ -173,7 +190,8 @@ Membuat aplikasi multivendor online food
         3. Testing: Jalankan server
         4. Hasil: ok
 
-#### 04.3. Melindungi sensitif file
+
+#### 05.3. Melindungi sensitif file
 
         (venv3932) λ pip install django-decouple
 
@@ -190,20 +208,24 @@ Membuat aplikasi multivendor online food
         5. Testing: Jalankan server
         6. Hasil: ok
 
-#### 04.4. Testing
+
+#### 05.4. Testing
 
         Menjalankan server. 
         Hasil Ok
 
-#### 04.5. Github
+
+#### 05.5. Github
 
         (venv3932) λ git push origin
         Enter passphrase for key '/c/Users/hp/.ssh/id_rsa':
         modified:   README.md
 
+
 #### Modifikasi file
 
         modified:   TOC-MODIFIED-COPY
+
 
 #### House cleaning
 
@@ -213,9 +235,11 @@ Membuat aplikasi multivendor online food
 
 ## 06. Membuat Django App
 
+
 #### 06.0. Pendahuluan
 
         pass 
+
 
 #### 06.1. Membuat django app
 
@@ -240,6 +264,7 @@ Membuat aplikasi multivendor online food
 
         Semua django app akan ditempatkan di dalam satu folder app 
 
+
 #### 06.2. Register django app
 
         modified:   README.md
@@ -254,10 +279,12 @@ Membuat aplikasi multivendor online food
         4. Hasil: ok
 
 
-
 ## 07. Django Custom User Model
 
 #### 07.0. Pendahuluan
+        pass
+
+
 #### 07.1. Membuat model UserManager
 
         modified:   README.md
@@ -269,6 +296,7 @@ Membuat aplikasi multivendor online food
         2. Testing: jalankan server
         3. Hasil: ok
 
+
 #### 07.2. Membuat custom model User
 
         modified:   README.md
@@ -279,6 +307,7 @@ Membuat aplikasi multivendor online food
         1. Membuat custom User model
         2. Testing: jalankan server
         3. Hasil: ok
+
 
 #### 07.3. Registrasi custom User
 
@@ -295,6 +324,7 @@ Membuat aplikasi multivendor online food
 
         Menjalankan migrasi
 
+
 #### 07.4. Menjalankan migrasi
 
         modified:   README.md
@@ -305,6 +335,7 @@ Membuat aplikasi multivendor online food
         1. Menjalankan migrasi
 
         NEXT: Membuat superuser
+
 
 #### 07.5. Membuat superuser
 
@@ -322,7 +353,11 @@ Membuat aplikasi multivendor online food
 
 ## 08. Django Admin
 
+
 #### 08.0. Pendahuluan
+        pass
+
+
 #### 08.1. Konfigurasi file media
 
         modified:   README.md
@@ -334,6 +369,7 @@ Membuat aplikasi multivendor online food
         1. Konfigurasi file media pada settings.py dan urls.py
 
         NEXT: menambahkan gambar untuk superuser
+
 
 #### 08.2. Admin login 
 
@@ -349,10 +385,12 @@ Membuat aplikasi multivendor online food
 
         NEXT: Membuat password tidak bisa diedit.
 
+
 #### 08.3. Membuat password tidak bisa diedit
 
         modified:   README.md
         modified:   app/accounts/admin.py
+
 
 #### 08.4. Konfigur User fields pada admin panel
 
@@ -384,14 +422,16 @@ Membuat aplikasi multivendor online food
 #### 08.6. Github
 
 
-
 ## 09. Django Signals
+
 
 #### 09.0. Pendahuluan
         pass
 
+
 #### 09.1. Tentang user profile
         pass
+
 
 #### 09.2. Membuat model UserProfile
 
@@ -419,6 +459,7 @@ Membuat aplikasi multivendor online food
 
         Membuat Django Signals
 
+
 #### 09.3. Membuat Django Signals
 
         modified:   README.md
@@ -443,6 +484,7 @@ Membuat aplikasi multivendor online food
 
         modified:   README.md
         modified:   app/accounts/models.py
+
 
 #### 09.4. Mensetup file media
 
@@ -488,8 +530,8 @@ Membuat aplikasi multivendor online food
 #### 09.7. Github
 
 
-
 ## 10. Registrasi User Sebagai Customer
+
 
 #### 10.0. Pendahuluan
 
@@ -521,6 +563,7 @@ Membuat aplikasi multivendor online food
         19. Admin will receive the commision, then clear the cart and send emil to the customer (we have take care the order)
         20. At the same time, we will send email to the restauran that he got a new order
         21. Once the restaurant owner open the email, the transaction can be procceded: except or reject the order
+
 
 #### 10.1. Register user - Part 1: urls, views with HttpResponse
 
@@ -745,8 +788,8 @@ Membuat aplikasi multivendor online food
         NEXT: Memperlihatkan error
 
 
-
 ## 11. Showing Errors: Field and Non Field Error
+
 
 #### 11.1. Pendahuluan
 
@@ -846,6 +889,7 @@ Membuat aplikasi multivendor online food
 
 ## 12. Django Messages
 
+
 #### 12.1. Pendahuluan
 
         We need to actually check if we have a message or not message
@@ -933,7 +977,6 @@ Membuat aplikasi multivendor online food
         NEXT: Animasi alerts massage
 
 
-
 ## 13. Animasi Messages
 
 
@@ -980,8 +1023,10 @@ Membuat aplikasi multivendor online food
 
 ## 14. Vendor
 
+
 #### 14.0. Pendahuluan
         pass
+
 
 #### 14.1. Membuat vendor app
 
@@ -1129,9 +1174,15 @@ Membuat aplikasi multivendor online food
 
 #### 14.8 Register Vendor model to admin and configure list_display
 
+
 #### 14.9 Changed the database, run and apply migrations and created admin, customer, and vendor
 
 
         modified:   app/accounts/migrations/0001_initial.py
         modified:   app/vendor/migrations/0001_initial.py
         new file:   media/vendor/license/cat-1_KCkmQQY.png
+
+
+#### 14.10 Modified readme file
+
+        modified:   README.md
