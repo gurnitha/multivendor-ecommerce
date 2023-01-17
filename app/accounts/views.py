@@ -4,7 +4,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import redirect
-from django.contrib import messages
+from django.contrib import messages, auth
 
 # Locals
 from app.accounts.forms import UserRegistrationForm
@@ -122,5 +122,21 @@ def register_vendor(request):
 	return render(request, 'app/accounts/register-vendor.html', context)
 
 
+# User or Vendor: Login
 def login(request):
+	if request.method == 'POST':
+		email = request.POST['email']
+		password = request.POST['password']
+		user = auth.authenticate(email=email, password=password)
+		# If user exist
+		if user is not None:
+			auth.login(request, user)
+			messages.success(request, 'You are now logged in.')
+			# return redirect('accounts:dashboard')
+			return redirect('home')
+		# If user is not exist
+		else: 
+			messages.error(request, 'Invalid login credentials')
+			return redirect('accounts:login')
+
 	return render(request, 'app/accounts/login.html')

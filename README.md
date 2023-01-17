@@ -1200,3 +1200,11 @@ Membuat aplikasi multivendor online food
 
         modified:   README.md
         modified:   templates/app/accounts/login.html 
+
+
+#### 14.13 Login - Adding logic to login view and redirect logged in user to home
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        NOTE: logged in user successfully redirected to home page
