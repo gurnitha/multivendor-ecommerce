@@ -1194,3 +1194,9 @@ Membuat aplikasi multivendor online food
         modified:   app/accounts/urls.py
         modified:   app/accounts/views.py
         new file:   templates/app/accounts/login.html
+
+
+#### 14.12 Login - Adding template to login page
+
+        modified:   README.md
+        modified:   templates/app/accounts/login.html 
