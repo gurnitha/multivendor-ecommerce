@@ -6,7 +6,8 @@ from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.contrib import messages, auth
 from django.contrib.auth import logout
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
+from django.core.exceptions import PermissionDenied
 
 # Locals
 from app.accounts.forms import UserRegistrationForm
@@ -164,6 +165,22 @@ def logout(request):
 	auth.logout(request)
 	messages.info(request, 'You are logged out. Login again?')
 	return redirect('accounts:login')
+
+
+# Restrict the vendor from accessing the customer page
+def check_role_vendor(user):
+    if user.role == 1:
+        return True
+    else:
+        raise PermissionDenied
+
+
+# Restrict the customer from accessing the vendor page
+def check_role_customer(user):
+    if user.role == 2:
+        return True
+    else:
+        raise PermissionDenied
 
 
 def my_account(request):

@@ -1518,3 +1518,36 @@ Membuat aplikasi multivendor online food
         2. Logged in customer can access vendor dashboard.
 
         Either customer or vendor MUST ONLY can access its own dashboard.
+
+
+#### 14.25 Protecting customer from accessing vendor dashboard or vice versa
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        ...
+        from django.contrib.auth.decorators import login_required, user_passes_test
+        from django.core.exceptions import PermissionDenied
+
+        ...
+
+        # Restrict the vendor from accessing the customer page
+        def check_role_vendor(user):
+            if user.role == 1:
+                return True
+            else:
+                raise PermissionDenied
+
+
+        # Restrict the customer from accessing the vendor page
+        def check_role_customer(user):
+            if user.role == 2:
+                return True
+            else:
+                raise PermissionDenied
+
+
+        NOTE:
+
+        1. Now logged in customer can not access vendor dasboard and vice versa.
+        2. But it does not show error if made mistakes ....
