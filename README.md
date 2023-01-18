@@ -1269,3 +1269,29 @@ Membuat aplikasi multivendor online food
         1. You must activate users in admin panel. 
         2. Otherwise you will not be able to log in and you will
            get the alert message 'invalid credentials ..' 
+
+
+#### 14.18 Restricting logged in user to access register-user page
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        Situation:
+
+        Logged in user still showing the registration page, so that should not happen.
+
+        STEPS:
+
+        1. We will handle the logged in user not to login again. DONE ABOVE.
+        2. Restric the logged in user from registeruser page. If the logged in
+        user try to do this, we will give him a warning.
+
+        We will do this:
+
+        if request.user.is_authenticated:
+                messages.warning(request, 'You are already logged in!')
+                return redirect('accounts:dashboard')
+
+        - modified:   README.md
+        - modified:   app/accounts/views.py
+        - Testing: berhasil, namun logged in user masih bisa akses laman registervendor
