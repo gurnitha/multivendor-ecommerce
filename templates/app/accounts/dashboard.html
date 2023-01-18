@@ -1,1 +1,10 @@
-DASHBOARD
+<!-- templates/app/accounts/dashboard.html -->
+{% extends 'base.html' %}
+{% block content %}
+
+<h4>Welcome {{user.username}}</h4>
+<p>This is a {{user.get_role}}</p>
+
+{% include 'partials/alerts.html' %}
+
+{% endblock content %}
