@@ -1485,4 +1485,36 @@ Membuat aplikasi multivendor online food
         1. Any not logged in user can access customer and vendor dashboar.
         2. In real world, only logged in user, either as customer or vendor
            can accesses its own dashboard.
-           
+
+
+#### 14.24 Protecting my-account, vendor-dashboard, and customer-dashboard from un-logged in user 
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        from django.contrib.auth.decorators import login_required
+
+        ...
+
+        @login_required(login_url='accounts:login')
+        def customer_dashboard(request):
+            return render(request, 'app/accounts/customer-dashboard.html')
+
+
+        @login_required(login_url='accounts:login')
+        def vendor_dashboard(request):
+            return render(request, 'app/accounts/vendor-dashboard.html')
+
+
+        NOTE: 
+
+        Un-logged in user CAN NOT access customer and vendor dashboard
+
+        DONE :)
+
+        IMPORTANT!!!!
+
+        1. Logged in vendor can access customer dashboard.
+        2. Logged in customer can access vendor dashboard.
+
+        Either customer or vendor MUST ONLY can access its own dashboard.
