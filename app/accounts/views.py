@@ -11,6 +11,7 @@ from django.contrib.auth import logout
 from app.accounts.forms import UserRegistrationForm
 from app.accounts.models import User, UserProfile
 from app.vendor.forms import VendorRegistrationForm
+from app.accounts.utils import detect_user
 
 # Create your views here.
 
@@ -139,7 +140,7 @@ def login(request):
 	# Handling the loggeg in user
 	if request.user.is_authenticated:
 		messages.warning(request, 'You are already logged in!')
-		return redirect('accounts:dashboard')
+		return redirect('accounts:my_account')
 
 	elif request.method == 'POST':
 		email = request.POST['email']
@@ -149,7 +150,7 @@ def login(request):
 		if user is not None:
 			auth.login(request, user)
 			messages.success(request, 'You are now logged in.')
-			return redirect('accounts:dashboard')
+			return redirect('accounts:my_account')
 		# If user is not exist
 		else: 
 			messages.error(request, 'Invalid login credentials')
@@ -163,6 +164,15 @@ def logout(request):
 	messages.info(request, 'You are logged out. Login again?')
 	return redirect('accounts:login')
 
+
+def my_account(request):
+    user = request.user
+    redirectUrl = detect_user(user)
+    return redirect(redirectUrl)
+
+
+def customer_dashboard(request):
+    return render(request, 'app/accounts/customer-dashboard.html')
 
 # Dashboard
 def dashboard(request):

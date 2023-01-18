@@ -1,0 +1,11 @@
+<!-- templates/app/accounts/customer-dashboard.html -->
+{% extends 'base.html' %}
+{% block content %}
+
+<h4>Welcome to CUSTOMER DASHBORD <span style="color:red;">{{user.username}}</span></h4>
+<p>Your role or logged in is as: <span style="color:red;">{{user.get_role}}</span></p>
+
+{% include 'partials/alerts.html' %}
+
+{% endblock content %}
+

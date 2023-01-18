@@ -17,5 +17,8 @@ urlpatterns = [
 	# Login, logout, dashboard
 	path('login/', views.login, name='login'),    
 	path('logout/', views.logout, name='logout'),
+	path('myaccount/', views.my_account, name='my_account'),
+    path('customer-dashboard/', views.customer_dashboard, name='customer_dashboard'),
+
 	path('dashboard/', views.dashboard, name='dashboard'),
 ] 

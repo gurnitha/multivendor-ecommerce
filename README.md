@@ -1403,3 +1403,64 @@ Membuat aplikasi multivendor online food
         modified:   README.md
         new file:   app/accounts/utils.py
         modified:   templates/partials/header.html
+
+
+#### 14.22 Defining Customer Dashboard
+
+        modified:   README.md
+        1. modified:   app/accounts/urls.py (setup customer path)
+
+                path('myaccount/', views.my_account, name='my_account'),
+                path('customer-dashboard/', views.customer_dashboard, name='customer_dashboard'),
+
+        2. modified:   app/accounts/utils.py (correcting typos)
+
+                # app/accounts/utils.py
+
+                def detect_user(user):
+
+                    if user.role == 1:
+                        redirectUrl = 'vendor-dashboard'
+                        # redirectUrl = 'vendor-dashboard' # this did not work because of i used: app/accounts
+                        redirectUrl = '../vendor-dashboard' # this works
+                        return redirectUrl
+
+                    elif user.role == 2:
+                        redirectUrl = 'customer-dashboard'
+                        # redirectUrl = 'customer-dashboard'   # this did not work because of i used: app/accounts
+                        redirectUrl = '../customer-dashboard'  # this works
+                        return redirectUrl
+
+                    elif user.role == None and user.is_superadmin:
+                        redirectUrl = '/admin'
+
+        3. modified:   app/accounts/views.py 
+
+                def my_account(request):
+                    user = request.user
+                    redirectUrl = detect_user(user)
+                    return redirect(redirectUrl)
+
+
+                def customer_dashboard(request):
+                    return render(request, 'app/accounts/customer-dashboard.html')
+
+        4. new file:   templates/app/accounts/customer-dashboard.html
+
+                <!-- templates/app/accounts/customer-dashboard.html -->
+                {% extends 'base.html' %}
+                {% block content %}
+
+                <h4>Welcome to CUSTOMER DASHBORD <span style="color:red;">{{user.username}}</span></h4>
+                <p>Your role or logged in is as: <span style="color:red;">{{user.get_role}}</span></p>
+
+                {% include 'partials/alerts.html' %}
+
+                {% endblock content %}
+
+        NOTE:
+
+        1. I tried to login as customer
+        2. It redirected me to customer dashboard
+
+        DONE :) 
