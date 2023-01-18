@@ -1551,3 +1551,33 @@ Membuat aplikasi multivendor online food
 
         1. Now logged in customer can not access vendor dasboard and vice versa.
         2. But it does not show error if made mistakes ....
+
+
+#### 14.26 Adding user_passes_test to customer_dashboard and vendor_dashboar views
+
+        1. modified:   README.md
+        2. modified:   app/accounts/views.py
+
+        @login_required(login_url='accounts:login')
+        @user_passes_test(check_role_customer)
+        def customer_dashboard(request):
+            return render(request, 'app/accounts/customer-dashboard.html')
+
+        @login_required(login_url='accounts:login')
+        @user_passes_test(check_role_vendor)
+        def vendor_dashboard(request):
+            return render(request, 'app/accounts/vendor-dashboard.html')
+
+        3. new file:   templates/403.html (Create template)
+        
+        4. modified:   templates/partials/header.html
+
+                href="{% url 'accounts:my_account' %}">My Account</a>
+
+        NOTE:
+
+        1. When logged in as admin from login page, it created error.
+        2. The error is like this:
+
+        TypeError at /accounts/myaccount/
+        argument of type 'NoneType' is not iterable

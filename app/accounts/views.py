@@ -15,7 +15,23 @@ from app.accounts.models import User, UserProfile
 from app.vendor.forms import VendorRegistrationForm
 from app.accounts.utils import detect_user
 
-# Create your views here.
+
+
+# Restrict the vendor from accessing the customer page
+def check_role_vendor(user):
+    if user.role == 1:
+        return True
+    else:
+        raise PermissionDenied
+
+
+# Restrict the customer from accessing the vendor page
+def check_role_customer(user):
+    if user.role == 2:
+        return True
+    else:
+        raise PermissionDenied
+
 
 # User: register
 def register_user(request):
@@ -167,22 +183,6 @@ def logout(request):
 	return redirect('accounts:login')
 
 
-# Restrict the vendor from accessing the customer page
-def check_role_vendor(user):
-    if user.role == 1:
-        return True
-    else:
-        raise PermissionDenied
-
-
-# Restrict the customer from accessing the vendor page
-def check_role_customer(user):
-    if user.role == 2:
-        return True
-    else:
-        raise PermissionDenied
-
-
 def my_account(request):
     user = request.user
     redirectUrl = detect_user(user)
@@ -190,11 +190,13 @@ def my_account(request):
 
 
 @login_required(login_url='accounts:login')
+@user_passes_test(check_role_customer)
 def customer_dashboard(request):
     return render(request, 'app/accounts/customer-dashboard.html')
 
 
 @login_required(login_url='accounts:login')
+@user_passes_test(check_role_vendor)
 def vendor_dashboard(request):
     return render(request, 'app/accounts/vendor-dashboard.html')
 
