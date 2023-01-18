@@ -1237,3 +1237,35 @@ Membuat aplikasi multivendor online food
         modified:   README.md
         modified:   app/accounts/views.py
         modified:   templates/partials/header.html
+
+
+#### 14.17 Restrict Loggedin Users From Accessing Loginpage And Register Page - Restricting logged in user
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+
+        We will try to restrict this signing page and restaurant page for the logged in users.
+        That means if the user is already logged in, then he should not be able to see this
+        or to log in again and to try to register as user again.
+
+
+        STEPS:
+
+        1. We will handle the logged in user not to login again. 
+        We will give the logged in user a warning if he try to log in again. 
+
+        So in the login view, we first need to check if the user is already logged in or not.
+
+        if request.user.is_authenticated:
+                messages.warning(request, 'You are already logged in!')
+                return redirect('accounts:dashboard')
+
+        - modified:   README.md
+        - modified:   app/accounts/views.py
+        - Testing: berhasil
+        - Git commit
+
+        NOTE: 
+        1. You must activate users in admin panel. 
+        2. Otherwise you will not be able to log in and you will
+           get the alert message 'invalid credentials ..' 
