@@ -89,6 +89,12 @@ def register_user(request):
 
 # Vendor: register
 def register_vendor(request):
+
+	# Handling the loggeg in user
+	if request.user.is_authenticated:
+		messages.warning(request, 'You are already logged in!')
+		return redirect('accounts:dashboard')
+
 	# Check if the request is POST
 	if request.method == 'POST':
 		# Store the data and create user
