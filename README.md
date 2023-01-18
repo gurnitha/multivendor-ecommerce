@@ -1464,3 +1464,25 @@ Membuat aplikasi multivendor online food
         2. It redirected me to customer dashboard
 
         DONE :) 
+
+
+#### 14.23 Defining Vendor Dashboard
+
+        modified:   README.md
+        modified:   app/accounts/urls.py (defined path)
+        modified:   app/accounts/views.py (defined: vendor_dashboard)
+        new file:   templates/app/accounts/vendor-dashboard.html (defined: vendor dashboard page)
+
+        NOTE:
+
+        1. I tried to login as vendor
+        2. It redirected me to vendor dashboard
+
+        DONE :) 
+
+        IMPORTANT!!!!
+
+        1. Any not logged in user can access customer and vendor dashboar.
+        2. In real world, only logged in user, either as customer or vendor
+           can accesses its own dashboard.
+           

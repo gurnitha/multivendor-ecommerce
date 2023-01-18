@@ -174,6 +174,10 @@ def my_account(request):
 def customer_dashboard(request):
     return render(request, 'app/accounts/customer-dashboard.html')
 
+
+def vendor_dashboard(request):
+    return render(request, 'app/accounts/vendor-dashboard.html')
+
 # Dashboard
 def dashboard(request):
 	return render(request, 'app/accounts/dashboard.html')
