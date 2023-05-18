@@ -8,6 +8,7 @@ from django.contrib import messages, auth
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.core.exceptions import PermissionDenied
+from django.template.defaultfilters import slugify
 
 # Locals
 from app.accounts.forms import UserRegistrationForm
@@ -96,7 +97,7 @@ def register_user(request):
 
 	# if the request is GET
 	else:
-		ureg_form = UserRegistrationForm
+		ureg_form = UserRegistrationForm()
 	
 	context = {
 		'ureg_form': ureg_form,
@@ -115,7 +116,7 @@ def register_vendor(request):
 		return redirect('accounts:dashboard')
 
 	# Check if the request is POST
-	if request.method == 'POST':
+	elif request.method == 'POST':
 		# Store the data and create user
 		ureg_form = UserRegistrationForm(request.POST)
 		vreg_form = VendorRegistrationForm(request.POST, request.FILES)
@@ -133,6 +134,9 @@ def register_vendor(request):
 			vendor = vreg_form.save(commit=False)
 			vendor.user = user 
 			# Get user profile from User which defined in signals
+
+			vendor_name = vreg_form.cleaned_data['vendor_name']
+			vendor.vendor_slug = slugify(vendor_name)+'-'+str(user.id)
 			user_profile = UserProfile.objects.get(user=user)
 			vendor.user_profile = user_profile
 			vendor.save()

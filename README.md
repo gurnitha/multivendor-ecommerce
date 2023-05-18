@@ -1621,3 +1621,22 @@ Membuat aplikasi multivendor online food
 #### HOUSE KEEPING PART 1 - Adding link to Github repo
 
         modified:   README.md
+
+
+#### 14.28 FIXING ISSUE - vendor_register dan user_register view
+        
+        NOTE:
+
+        Pada 14.27, terjadi:
+
+        1. User sebagai customer bisa register.
+        2. Tapi Register a vendor tidak bisa.
+
+        Setelah fixing vendor_register view, user sdh bisa 
+        register sebagai vendor (register restauran)
+
+        modified:   README.md
+        modified:   app/accounts/views.py
+        new file:   media/vendor/license/darling.PNG
+        new file:   media/vendor/license/denah_jalan_ke_lokasi.PNG
+        new file:   media/vendor/license/denah_jalan_ke_lokasi_1ZvhdEp.PNG
