@@ -12,7 +12,8 @@ Membuat aplikasi multivendor online food
 #### 02.4. Menginstal PostgreSQL
 #### 02.5. Membuat Github repositori
 #### 02.6. Clone Github repositori
-#### 02.7. Testing - Modifikasi .gitignore dan readme file
+
+#### [02.7. Testing - Modifikasi .gitignore dan readme file](https://github.com/gurnitha/multivendor-ecommerce/commit/1eb73f3635082add48e4bce80ca1a4aac8cf048c)
 
         modified:   .gitignore
         modified:   README.md
@@ -22,15 +23,15 @@ Membuat aplikasi multivendor online food
 
 
 #### 03.0. Pendahuluan
-		pass
+                pass
 
 
-#### 03.1. Membuat virtual environment
+#### [03.1. Membuat virtual environment](https://github.com/gurnitha/multivendor-ecommerce/commit/9cca05374dd053af7fe2f6644bb8a81a7d72261b)
 
         modified:   README.md
 
 
-#### 03.2. Menginstal django
+#### [03.2. Menginstal django](https://github.com/gurnitha/multivendor-ecommerce/commit/5e9181f863ccb55599836a5839347e4b9c0b8950)
 
        modified:   README.md
 
@@ -43,7 +44,7 @@ Membuat aplikasi multivendor online food
        3. Menginstal django  
 
 
-#### 03.3. Membuat proyek django
+#### [03.3. Membuat proyek django](https://github.com/gurnitha/multivendor-ecommerce/commit/046ba7546d07780712c6069ada65408717e0c87a)
 
         Perintah untuk membuat proyek django dengan nama 'config'
         (venv3932) λ django-admin startproject config .
@@ -57,7 +58,7 @@ Membuat aplikasi multivendor online food
         new file:   manage.py
 
 
-#### 03.4. Hello World!
+#### [03.4. Hello World!](https://github.com/gurnitha/multivendor-ecommerce/commit/a824ec117fb0323e4c534128969f482ee20a75fb)
 
         modified:   README.md
         modified:   config/urls.py
@@ -74,32 +75,32 @@ Membuat aplikasi multivendor online food
         pass
 
 
-#### 04.1. Aktifasi django templates
+#### [04.1. Aktifasi django templates](https://github.com/gurnitha/multivendor-ecommerce/commit/d96c55d100f702cf3ea4f1b7550edac4bc43182a)
 
         modified:   README.md
         modified:   config/settings.py
 
 
-#### 04.2. Membuat homepage
+#### [04.2. Membuat homepage](https://github.com/gurnitha/multivendor-ecommerce/commit/a601e22f79cdcc2a4da27300eab939ebe064bf0c)
 
         modified:   README.md
         modified:   config/views.py
         new file:   templates/home.html
 
 
-#### 04.3. Mengisi html template untuk homepage
+#### [04.3. Mengisi html template untuk homepage](https://github.com/gurnitha/multivendor-ecommerce/commit/bda202ca2b7d6ac7405de0d4fec579494333f179)
 
         modified:   README.md
         modified:   templates/home.html
 
 
-#### 04.4. Konfigurasi file statis
+#### [04.4. Konfigurasi file statis](https://github.com/gurnitha/multivendor-ecommerce/commit/8c07244a9073afcbfc0de86723ec2830d0ec5f2b)
 
         modified:   README.md
         modified:   config/settings.py
 
 
-#### 04.5. Loading file statis
+#### [04.5. Loading file statis](https://github.com/gurnitha/multivendor-ecommerce/commit/6c42836b20f8a045de2c31b09e1557c39f35cdf1)
 
         modified:   .gitignore
         modified:   README.md
@@ -113,7 +114,7 @@ Membuat aplikasi multivendor online food
         4. Hasil: ok
 
 
-#### 04.6. Template inheritance basic
+#### [04.6. Template inheritance basic](https://github.com/gurnitha/multivendor-ecommerce/commit/35ff800e472a0ae266edd2de48b5d892f8a7cc54)
 
         modified:   README.md
         new file:   templates/base.html
@@ -130,7 +131,7 @@ Membuat aplikasi multivendor online food
         7. Hasil: ok
 
 
-#### 04.7. Partials dan include
+#### [04.7. Partials dan include](https://github.com/gurnitha/multivendor-ecommerce/commit/675e15c28b129b8993d1d4a61748859b0625cde2)
 
         modified:   README.md
         new file:   TOC-MODIFIED-COPY
@@ -1615,3 +1616,8 @@ Membuat aplikasi multivendor online food
         modified:   README.md
         renamed:    app/vendor/migrations/0001_initial.py -> app/vendor/migrations/0001_initial_ori.py
         modified:   config/settings.py
+
+
+#### HOUSE KEEPING PART 1 - Adding link to Github repo
+
+        modified:   README.md
