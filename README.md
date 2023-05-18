@@ -1640,3 +1640,20 @@ Membuat aplikasi multivendor online food
         new file:   media/vendor/license/darling.PNG
         new file:   media/vendor/license/denah_jalan_ke_lokasi.PNG
         new file:   media/vendor/license/denah_jalan_ke_lokasi_1ZvhdEp.PNG
+
+
+#### 14.29 FIXING ISSUE - showing alert message
+        
+        NOTE ISSUE:
+
+        1. Alert login dan log out menumpuk krn
+           pada login page tidak bersisi / di-include-kan alertnya.
+
+        Fixing issue:
+
+        1. Add this to login page
+        <!-- Load message from templates/includes/alert.html -->
+        {% include '../../partials/alerts.html' %}
+
+        modified:   app/accounts/views.py
+        modified:   templates/app/accounts/login.html

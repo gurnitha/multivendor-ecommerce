@@ -46,7 +46,7 @@ def register_user(request):
 	
 	# if the request is post
 	if request.method == 'POST':
-		print(request.POST)
+		# print(request.POST)
 		ureg_form = UserRegistrationForm(request.POST)
 
 		# CREATE USER USING THE FORM
@@ -91,7 +91,7 @@ def register_user(request):
 			return redirect('accounts:register_user')
 
 		else:
-			print('invalid ureg_form')
+			# print('invalid ureg_form')
 			print(ureg_form.errors)
 
 
