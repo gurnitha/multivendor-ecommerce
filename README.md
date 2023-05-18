@@ -1581,3 +1581,37 @@ Membuat aplikasi multivendor online food
 
         TypeError at /accounts/myaccount/
         argument of type 'NoneType' is not iterable
+
+
+#### 14.27 FIXING ISSUE in 14.26: Adding user_passes_test to customer_dashboard and vendor_dashboar views
+
+        
+        NOTE:
+
+        Sebenarnanya tidak ditemui issue setelah:
+        
+        1. Ganti db (karena db mengalami error).
+        2. Jalankan migrasi.
+        3. Membuat superuser
+        4. Membuat user sebagai vendor dari admin dashboard:
+           - dengan role vendor,
+           - is_admin (check),
+           - is_staff (check),
+           _ is_active (check).
+        5. Membuat user sebagai customer dari admin dashboard:
+           - dengan role customer,
+           _ is_active (check).
+
+        LOGIN:
+
+        1. vendor login dari laman depan dan admin dashboard: sukses
+        2. customer login dari laman depan sukses.
+           TETAPI tdk bisa login dari admin dashboard krn:
+           - is_admin (tidak check),
+           - is_staff (tidak check),
+
+        Overall: :) 
+
+        modified:   README.md
+        renamed:    app/vendor/migrations/0001_initial.py -> app/vendor/migrations/0001_initial_ori.py
+        modified:   config/settings.py
